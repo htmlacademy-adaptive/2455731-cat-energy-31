@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Irina  Blatsky](https://up.htmlacademy.ru/adaptive/31/user/2455731).
-* Наставник: `Дарья Шестерина´.
+* Наставник: `Дарья Шестерина´(https://htmlacademy.ru/profile/id221124).
 
 ---
 

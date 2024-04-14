@@ -1,9 +1,12 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Irina  Blatsky](https://up.htmlacademy.ru/adaptive/31/user/2455731).
-* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
 
----
+* Наставник: `Дарья Шестерина´ https://htmlacademy.ru/profile/id221124.
+
+
+
+
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
 

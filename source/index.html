@@ -6,6 +6,10 @@
   <title>HTML Academy:Кэт энерджи»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicons/icon.svg">
+  <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -13,17 +17,23 @@
   <header class="header">
     <div class="header-container container">
       <nav class="header__navigation navigation">
-        <a class="navigation__logo site-logo" href="#">gg
+        <a class="navigation__logo site-logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/icons/logo-pc.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/icons/logo-tablet.svg">
+            <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи">
+          </picture>
+          <img src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
         <button class="navigation__button-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class=" navigation__list">
           <li class="navigation__item navigation__item--current">
-            <a class="navigation__item-link" href="index.html">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__item-link" href="catalog.html">Каталог продукции</a>
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
         </ul>
       </nav>
@@ -34,6 +44,12 @@
       <div class="hero__container container">
         <h1 class="hero__title title-h1">Функциональное<br> питание для котов</h1>
         <p class="hero__subtitle">Занялся собой? Займись котом!</p>
+        <picture>
+          <source media="(min-width: 1440px)" width="554" height="498" type="image/png" srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x">
+          <img src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Баночка с питанием Кэт энерджи">
+        </picture>
+
         <a class="hero__button button button--primary" href="#">Подобрать программу</a>
       </div>
       <section class="main__benefits benefits">
@@ -102,23 +118,41 @@
           <p class="illustration__resume"><span>Затраты на питание:</span><span>15 000 руб.</span>
           </p>
         </div>
-        <div class="illustration__slider"></div>
-        <div class="illustration__slider"></div>
+        <div class="illustration__slider">
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x 2x">
+            <img src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" width="280" height="256" alt="Кот с лишним весом">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x 2x">
+            <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот с нормальным весом">
+          </picture>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-
         <div class="contacts__container container">
           <p class="contacts__offer">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
           <address class="contacts__text">ул. Большая
             Конюшенная, д. 19/8 Санкт-Петерсбург</address>
+        </div>
+        <div class="contacts__map">
+          <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-pc@1x.png 1x, images/map-pc@2x 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта города для нахождения адреса Кэт энерджи">
+          </picture>
         </div>
       </section>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo" href="#">gg</a>
+      <a class="footer__logo" href="#">
+        <img src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
+      </a>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank">
@@ -137,7 +171,7 @@
         </li>
       </ul>
       <div class="footer__developer developer">
-        <a class="developer__link developer-link" href="https://htmlacademy.ru" rel="noreferrer noopener" target="_blank">
+        <a class="developer__link developer-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer noopener" target="_blank">
           <span>HTML Academy</span>
         </a>
       </div>

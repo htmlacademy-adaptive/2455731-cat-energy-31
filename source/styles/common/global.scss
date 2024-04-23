@@ -1,1 +1,23 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $primary-bg;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $primary-color;
+  min-height: 100%;
+  margin: 0;
+}
+

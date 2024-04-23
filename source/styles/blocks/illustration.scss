@@ -1,0 +1,49 @@
+.illustration {
+  background-color: #d9d9d9;
+}
+
+.illustration__content {
+
+}
+
+.illustration__title {
+  color: $secondary-color;
+}
+
+.illustration__description {
+  font-family: $primary-font;
+  font-weight: $font-weight;
+  font-size: 14px;
+  line-height: 18px;
+  color: $primary-color;
+  text-align: center;
+}
+
+.illustration__stats {
+
+}
+
+.illustration__stats-number {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: $font-weight;
+  color: $secondary-color;
+}
+
+.illustration__stats-description {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.illustration__resume {
+  font-family: $secondary-font;
+  font-weight: $font-weight;
+  line-height: 20px;
+  font-size: 14px;
+  color: $secondary-color;
+}
+
+.illustration__slider {
+
+}

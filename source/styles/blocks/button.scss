@@ -1,0 +1,24 @@
+.button {
+  display: inline-flex;
+  background-color: $button-bg;
+  color: $button-color-text;
+  font-family: $secondary-font;
+  font-weight: $font-weight;
+  line-height: 20px;
+  font-size: $font-size;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  min-height: 40px;
+  padding: 10px 44px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.button--primary {
+
+}
+
+.button--secondary {
+
+}

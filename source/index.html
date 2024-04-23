@@ -15,15 +15,15 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header-container container">
+    <div class="header__container container">
       <nav class="header__navigation navigation">
         <a class="navigation__logo site-logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/icons/logo-pc.svg">
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/icons/logo-tablet.svg">
-            <img src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи">
+            <img class="site-logo__image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи">
           </picture>
-          <img src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
+          <img class="site-logo__text" src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
@@ -34,6 +34,9 @@
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Подбор прогаммы</a>
           </li>
         </ul>
       </nav>
@@ -47,16 +50,15 @@
         <picture>
           <source media="(min-width: 1440px)" width="554" height="498" type="image/png" srcset="images/hero-product-pc@1x.png 1x, images/hero-product-pc@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero-product-tablet@1x.png 1x, images/hero-product-tablet@2x.png 2x">
-          <img src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Баночка с питанием Кэт энерджи">
+          <img class="hero__image" src="images/hero-product-mobile@1x.png" srcset="images/hero-product-mobile@2x.png 2x" width="280" height="270" alt="Баночка с питанием Кэт энерджи">
         </picture>
-
         <a class="hero__button button button--primary" href="#">Подобрать программу</a>
       </div>
       <section class="main__benefits benefits">
         <div class="benefits__container container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits__list">
-            <li class="benefits-item">
+            <li class="benefits__item">
               <h3 class="benefits__item-title title-h3">Похудение</h3>
               <p class="benefits__item-description">Ваш кот весит больше собаки и почти утратил способность
                 лазить по деревьям? Пора на диету! Cat Energy Slim поможет
@@ -120,12 +122,10 @@
         </div>
         <div class="illustration__slider">
           <picture>
-            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x 2x">
             <img src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" width="280" height="256" alt="Кот с лишним весом">
           </picture>
           <picture>
-            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x 2x">
             <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот с нормальным весом">
           </picture>
@@ -135,8 +135,8 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__container container">
           <p class="contacts__offer">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-          <address class="contacts__text">ул. Большая
-            Конюшенная, д. 19/8 Санкт-Петерсбург</address>
+          <address class="contacts__text">ул. Большая<br>
+            Конюшенная, д. 19/8<br>Санкт-Петерсбург</address>
         </div>
         <div class="contacts__map">
           <picture>
@@ -156,22 +156,22 @@
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank">
-            <span class=" visually-hidden">Вконтакте</span>
+            <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" rel="noreferrer noopener" target="_blank">
-            <span class=" visually-hidden">Youtube</span>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegramm" href="https://t.me/htmlacademy" rel="noreferrer noopener" target="_blank">
-            <span class=" visually-hidden">Телеграмм</span>
+            <span class="visually-hidden">Телеграмм</span>
           </a>
         </li>
       </ul>
       <div class="footer__developer developer">
-        <a class="developer__link developer-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer noopener" target="_blank">
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer noopener" target="_blank">
           <span>HTML Academy</span>
         </a>
       </div>

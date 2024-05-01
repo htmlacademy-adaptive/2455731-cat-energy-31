@@ -1,0 +1,32 @@
+.developer {
+  //
+}
+
+.developer__link {
+  display: block;
+  text-decoration: none;
+  color: $primary-color-text;
+  line-height: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.developer__link-icon {
+  color: $secondary-color-2;
+
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}

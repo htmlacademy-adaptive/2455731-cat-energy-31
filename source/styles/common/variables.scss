@@ -3,10 +3,28 @@ $primary-font: "Lato", sans-serif;
 $secondary-font: "Oswald", sans-serif;
 $primary-bg: #ffffff;
 $secondary-bg: #f2f2f2;
+$accent-bg: #dedede;
 $font-size: 16px;
-$line-height: 18px;
-$primary-color: #444444;
+$font-weight-normal: 400;
+
+$primary-color-text: #444444;
+$secondary-color-text: #000000;
+$additional-color-text: #222222;
+$accent-color-text: #111111;
+
+
+$primary-color: #68b738;
+$primary-color-2: #5eaa2f;
 $secondary-color: #000000;
-$font-weight: 400;
-$button-bg: #68b738;
-$button-color-text: #ffffff;
+$secondary-color-2: #666666;
+
+$focus-hover-color: #3e3e3e;
+$active-color: #6b6b6b;
+$error-color: #ff8282;
+$white: #ffffff;
+$primary-border-color: #d9d9d9;
+$secondary-border-color: #ebebeb;
+$accent-border-color: #cdcdcd;
+$hover-color-text: #9f9d9d;
+$hover-active-color: #ebebeb;
+

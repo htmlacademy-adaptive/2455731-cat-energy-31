@@ -1,0 +1,34 @@
+.footer {
+  background-color: $secondary-bg;
+}
+
+.footer__container {
+  //
+}
+
+.footer__logo {
+  display: block;
+  color: $accent-color-text;
+
+  &:hover,
+  &:focus {
+    color: $focus-hover-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+}
+
+.footer__logo-text {
+
+}
+
+
+.footer__social {
+  //
+}
+
+.footer__developer {
+  //
+}

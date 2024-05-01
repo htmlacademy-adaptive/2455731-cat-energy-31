@@ -1,0 +1,49 @@
+.illustration {
+  background-color: $accent-bg;
+}
+
+.illustration__content {
+  //
+}
+
+.illustration__title {
+  color: $secondary-color-text;
+}
+
+.illustration__description {
+  font-family: $primary-font;
+  font-weight: $font-weight-normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $primary-color-text;
+  text-align: center;
+}
+
+.illustration__stats {
+  //
+}
+
+.illustration__stats-number {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: $font-weight-normal;
+  color: $secondary-color-text;
+}
+
+.illustration__stats-description {
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.illustration__resume {
+  font-family: $secondary-font;
+  font-weight: $font-weight-normal;
+  line-height: 20px;
+  font-size: 14px;
+  color: $secondary-color-text;
+}
+
+.illustration__slider {
+  //
+}

@@ -1,0 +1,19 @@
+.site-logo {
+  display: block;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
+.site-logo__image {
+  //
+}
+
+.site-logo__text {
+  //
+}

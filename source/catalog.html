@@ -19,15 +19,15 @@
       <nav class="header__navigation navigation">
         <a class="navigation__logo site-logo" href="#">
           <picture>
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/icons/logo-pc.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/icons/logo-tablet.svg">
-            <img class="site-logo__image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи">
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-pc.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="site-logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи">
           </picture>
-          <img class="site-logo__text" src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
+          <img class="site-logo__text" src="images/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
         </a>
-        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+        <button class="navigation__toggle navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="navigation__button-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        <button class="navigation__toggle navigation__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class=" navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -42,215 +42,215 @@
       </nav>
     </div>
   </header>
-  <main class="main-inner">
+  <main class="main">
     <section class="catalog">
       <div class="catalog__container container">
         <h1 class="catalog__title title-h1">Каталог продукции</h1>
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <div class="catalog__card catalog-card">
-              <a class="catalog-card__link" href="#">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__content ">
+              <a class="catalog-card__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" width="161" height="172" type="image/png" srcset="images/product-1-tablet-pc@1x.png 1x, images/product-1-tablet-pc@2x 2x">
+                  <source media="(min-width: 1440px)" width="161" height="172" type="image/png" srcset="images/product-1-tablet-pc@1x.png 1x, images/product-1-tablet-pc@2x.png 2x">
                   <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/product-1-tablet-pc@1x.png 1x, images/product-1-tablet-pc@2x.png 2x">
-                  <img src="images/product-1-mobile@1x.png" srcset="images/product-1-mobile@2x.png 2x" width="68" height="86" alt="Питание для кошек Кэт энерджи с курицей">
+                  <img class="catalog-card__picture" src="images/product-1-mobile@1x.png" srcset="images/product-1-mobile@2x.png 2x" width="68" height="86" alt="Питание для кошек Кэт энерджи с курицей">
                 </picture>
               </a>
               <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title catalog-title-h3">Cat energy pro 500 <span>г</span></h3>
+                <h3 class="catalog-card__title title">Cat energy pro 500 <span>г</span></h3>
               </a>
               <dl class="catalog-card__list">
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Масса</dt>
-                  <dd class="card-item__number">500<span>г</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Масса</dt>
+                  <dd class="catalog-card__item-description">500<span>г</span></dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Вкус</dt>
-                  <dd class="card-item__description-text">Курица</dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Вкус</dt>
+                  <dd class="catalog-card__item-description">Курица</dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Цена</dt>
-                  <dd class="card-item__number">700<span>&#8381;</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Цена</dt>
+                  <dd class="catalog-card__item-description">700<span>&#8381;</span></dd>
                 </div>
               </dl>
               <a class="catalog-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <div class="catalog__card catalog-card">
-              <a class="catalog-card__link" href="#">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__content ">
+              <a class="catalog-card__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/product-2-pc@1x.png 1x, images/product-2-pc@2x 2x">
+                  <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/product-2-pc@1x.png 1x, images/product-2-pc@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/product-2-tablet@1x.png 1x, images/product-2-tablet@2x.png 2x">
-                  <img src="images/product-2-mobile@1x.png" srcset="images/product-2-mobile@2x.png 2x" width="84" height="100" alt="Питание для кошек Кэт энерджи с курицей">
+                  <img class="catalog-card__picture" src="images/product-2-mobile@1x.png" srcset="images/product-2-mobile@2x.png 2x" width="84" height="100" alt="Питание для кошек Кэт энерджи с курицей">
                 </picture>
               </a>
               <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title catalog-title-h3">Cat energy pro 1000 <span>г</span></h3>
+                <h3 class="catalog-card__title title">Cat energy pro 1000 <span>г</span></h3>
               </a>
               <dl class="catalog-card__list">
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Масса</dt>
-                  <dd class="card-item__number">1000<span>г</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Масса</dt>
+                  <dd class="catalog-card__item-description">1000<span>г</span></dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Вкус</dt>
-                  <dd class="card-item__description-text">Курица</dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Вкус</dt>
+                  <dd class="catalog-card__item-description">Курица</dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Цена</dt>
-                  <dd class="card-item__number">1000<span>&#8381;</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Цена</dt>
+                  <dd class="catalog-card__item-description">1000<span>&#8381;</span></dd>
                 </div>
               </dl>
               <a class="catalog-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <div class="catalog__card catalog-card">
-              <a class="catalog-card__link" href="#">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__content ">
+              <a class="catalog-card__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/product-3-tablet-pc@1x.png 1x, images/product-3-tablet-pc@2x 2x">
+                  <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/product-3-tablet-pc@1x.png 1x, images/product-3-tablet-pc@2x.png 2x">
                   <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/product-3-tablet-pc@1x.png 1x, images/product-3-tablet-pc@2x.png 2x">
-                  <img src="images/product-3-mobile@1x.png" srcset="images/product-3-mobile@2x.png 2x" width="68" height="78" alt="Питание для кошек Кэт энерджи с рыбой">
+                  <img class="catalog-card__picture" src="images/product-3-mobile@1x.png" srcset="images/product-3-mobile@2x.png 2x" width="68" height="78" alt="Питание для кошек Кэт энерджи с рыбой">
                 </picture>
               </a>
               <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title catalog-title-h3">Cat energy pro 500 <span>г</span></h3>
+                <h3 class="catalog-card__title title">Cat energy pro 500 <span>г</span></h3>
               </a>
               <dl class="catalog-card__list">
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Масса</dt>
-                  <dd class="card-item__number">500<span>г</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Масса</dt>
+                  <dd class="catalog-card__item-description">500<span>г</span></dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Вкус</dt>
-                  <dd class="card-item__description-text">Рыба</dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Вкус</dt>
+                  <dd class="catalog-card__item-description">Рыба</dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Цена</dt>
-                  <dd class="card-item__number">700<span>&#8381;</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Цена</dt>
+                  <dd class="catalog-card__item-description">700<span>&#8381;</span></dd>
                 </div>
               </dl>
               <a class="catalog-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <div class="catalog__card catalog-card">
-              <a class="catalog-card__link" href="#">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__content ">
+              <a class="catalog-card__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/product-4-pc@1x.png 1x, images/product-4-pc@2x 2x">
+                  <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/product-4-pc@1x.png 1x, images/product-4-pc@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/product-4-tablet@1x.png 1x, images/product-4-tablet@2x.png 2x">
-                  <img src="images/product-4-mobile@1x.png" srcset="images/product-4-mobile@2x.png 2x" width="84" height="100" alt="Питание для кошек Кэт энерджи с рыбой">
+                  <img class="catalog-card__picture" src="images/product-4-mobile@1x.png" srcset="images/product-4-mobile@2x.png 2x" width="84" height="100" alt="Питание для кошек Кэт энерджи с рыбой">
                 </picture>
               </a>
               <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title catalog-title-h3">Cat energy pro 1000 <span>г</span></h3>
+                <h3 class="catalog-card__title title">Cat energy pro 1000 <span>г</span></h3>
               </a>
               <dl class="catalog-card__list">
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Масса</dt>
-                  <dd class="card-item__number">1000<span>г</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Масса</dt>
+                  <dd class="catalog-card__item-description">1000<span>г</span></dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Вкус</dt>
-                  <dd class="card-item__description-text">Рыба</dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Вкус</dt>
+                  <dd class="catalog-card__item-description">Рыба</dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Цена</dt>
-                  <dd class="card-item__number">1000<span>&#8381;</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Цена</dt>
+                  <dd class="catalog-card__item-description">1000<span>&#8381;</span></dd>
                 </div>
               </dl>
               <a class="catalog-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <div class="catalog__card catalog-card">
-              <a class="catalog-card__link" href="#">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__content ">
+              <a class="catalog-card__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" width="161" height="171" type="image/png" srcset="images/product-5-tablet-pc@1x.png 1x, images/product-5-tablet-pc@2x 2x">
+                  <source media="(min-width: 1440px)" width="161" height="171" type="image/png" srcset="images/product-5-tablet-pc@1x.png 1x, images/product-5-tablet-pc@2x.png 2x">
                   <source media="(min-width: 768px)" width="161" height="171" type="image/png" srcset="images/product-5-tablet-pc@1x.png 1x, images/product-5-tablet-pc@2x.png 2x">
-                  <img src="images/product-5-mobile@1x.png" srcset="images/product-5-mobile@2x.png 2x" width="68" height="78" alt="Питание для кошек Кэт энерджи с гречкой">
+                  <img class="catalog-card__picture" src="images/product-5-mobile@1x.png" srcset="images/product-5-mobile@2x.png 2x" width="68" height="78" alt="Питание для кошек Кэт энерджи с гречкой">
                 </picture>
               </a>
               <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title catalog-title-h3">Cat energy slim 500 <span>г</span></h3>
+                <h3 class="catalog-card__title title">Cat energy slim 500 <span>г</span></h3>
               </a>
               <dl class="catalog-card__list">
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Масса</dt>
-                  <dd class="card-item__number">500<span>г</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Масса</dt>
+                  <dd class="catalog-card__item-description">500<span>г</span></dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Вкус</dt>
-                  <dd class="card-item__description-text">Гречка</dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Вкус</dt>
+                  <dd class="catalog-card__item-description">Гречка</dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Цена</dt>
-                  <dd class="card-item__number">400<span>&#8381;</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Цена</dt>
+                  <dd class="catalog-card__item-description">400<span>&#8381;</span></dd>
                 </div>
               </dl>
               <a class="catalog-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <div class="catalog__card catalog-card">
-              <a class="catalog-card__link" href="#">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__content ">
+              <a class="catalog-card__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/product-6-pc@1x.png 1x, images/product-6-pc@2x 2x">
+                  <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/product-6-pc@1x.png 1x, images/product-6-pc@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/product-6-tablet@1x.png 1x, images/product-6-tablet@2x.png 2x">
-                  <img src="images/product-6-mobile@1x.png" srcset="images/product-6-mobile@2x.png 2x" width="84" height="100" alt="Питание для кошек Кэт энерджи с гречкой">
+                  <img class="catalog-card__picture" src="images/product-6-mobile@1x.png" srcset="images/product-6-mobile@2x.png 2x" width="84" height="100" alt="Питание для кошек Кэт энерджи с гречкой">
                 </picture>
               </a>
               <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title catalog-title-h3">Cat energy slim 1000 <span>г</span></h3>
+                <h3 class="catalog-card__title title">Cat energy slim 1000 <span>г</span></h3>
               </a>
               <dl class="catalog-card__list">
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Масса</dt>
-                  <dd class="card-item__number">1000<span>г</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Масса</dt>
+                  <dd class="catalog-card__item-description">1000<span>г</span></dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Вкус</dt>
-                  <dd class="card-item__description-text">Гречка</dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Вкус</dt>
+                  <dd class="catalog-card__item-description">Гречка</dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Цена</dt>
-                  <dd class="card-item__number">700<span>&#8381;</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Цена</dt>
+                  <dd class="catalog-card__item-description">700<span>&#8381;</span></dd>
                 </div>
               </dl>
               <a class="catalog-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
 
-          <li class="catalog__item">
-            <div class="catalog__card catalog-card">
-              <a class="catalog-card__link" href="#">
+          <li class="catalog__item catalog-card">
+            <div class="catalog-card__content ">
+              <a class="catalog-card__link-image" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/product-7-tablet-pc@1x.png 1x, images/product-7-tablet-pc@2x 2x">
+                  <source media="(min-width: 1440px)" width="163" height="174" type="image/png" srcset="images/product-7-tablet-pc@1x.png 1x, images/product-7-tablet-pc@2x.png 2x">
                   <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/product-7-tablet-pc@1x.png 1x, images/product-7-tablet-pc@2x.png 2x">
-                  <img src="images/product-7-mobile@1x.png" srcset="images/product-7-mobile@2x.png 2x" width="72" height="84" alt="Питание для кошек Кэт энерджи с рисом">
+                  <img class="catalog-card__picture" src="images/product-7-mobile@1x.png" srcset="images/product-7-mobile@2x.png 2x" width="72" height="84" alt="Питание для кошек Кэт энерджи с рисом">
                 </picture>
               </a>
               <a class="catalog-card__link" href="#">
-                <h3 class="catalog-card__title catalog-title-h3">Cat energy slim 500 <span>г</span></h3>
+                <h3 class="catalog-card__title title">Cat energy slim 500 <span>г</span></h3>
               </a>
               <dl class="catalog-card__list">
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Масса</dt>
-                  <dd class="card-item__number">500<span>г</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Масса</dt>
+                  <dd class="catalog-card__item-description">500<span>г</span></dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Вкус</dt>
-                  <dd class="card-item__description-text">Рис</dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Вкус</dt>
+                  <dd class="catalog-card__item-description">Рис</dd>
                 </div>
-                <div class="catalog-card__item card-item">
-                  <dt class="card-item__description">Цена</dt>
-                  <dd class="card-item__number">500<span>&#8381;</span></dd>
+                <div class="catalog-card__item">
+                  <dt class="catalog-card__item-description">Цена</dt>
+                  <dd class="catalog-card__item-description">500<span>&#8381;</span></dd>
                 </div>
               </dl>
               <a class="catalog-card__button button button--primary" href="#">Заказать</a>
@@ -258,7 +258,7 @@
           </li>
         </ul>
         <div class="catalog__card catalog-card catalog-card--secondary">
-          <p class="catalog-card__text catalog-title">Показать еще 100500 товаров</p>
+          <p class="catalog-card__text">Показать еще 100500 товаров</p>
           <p class="catalog-card__subtitle">На самом деле вкусов гораздо больше!</p>
           <a class="catalog-card__button button button--secondary" href="#">Показать все</a>
         </div>
@@ -271,33 +271,33 @@
         <ul class="addition__list">
           <li class="addition__item">
             <div class="addition__item-card addition-card">
-              <p class="addition-card__title addition-card-title"><span>Сахарозаменитель</span></p>
+              <p class="addition-card__title"><span>Сахарозаменитель</span></p>
               <p class="addition-card__description"><span>1 упаковка(100 г)</span></p>
-              <p class="addition-card__number">200<span>&#8381;</span></p>
+              <p class="addition-card__description">200<span>&#8381;</span></p>
               <a class="addition-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
           <li class="addition__item">
             <div class="addition__item-card addition-card">
-              <p class="addition-card__title addition-card-title"><span>Питьевая вода</span></p>
+              <p class="addition-card__title"><span>Питьевая вода</span></p>
               <p class="addition-card__description"><span>5 литров</span></p>
-              <p class="addition-card__number">50<span>&#8381;</span></p>
+              <p class="addition-card__description">50<span>&#8381;</span></p>
               <a class="addition-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
           <li class="addition__item">
             <div class="addition__item-card addition-card">
-              <p class="addition-card__title addition-card-title"><span>Молоко</span></p>
+              <p class="addition-card__title"><span>Молоко</span></p>
               <p class="addition-card__description"><span>1 литр</span></p>
-              <p class="addition-card__number">100<span>&#8381;</span></p>
+              <p class="addition-card__description">100<span>&#8381;</span></p>
               <a class="addition-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
           <li class="addition__item">
             <div class="addition__item-card addition-card">
-              <p class="addition-card__title addition-card-title"><span>Витамины</span></p>
+              <p class="addition-card__title"><span>Витамины</span></p>
               <p class="addition-card__description"><span>1 упаковка(30 г)</span></p>
-              <p class="addition-card__number">300<span>&#8381;</span></p>
+              <p class="addition-card__description">300<span>&#8381;</span></p>
               <a class="addition-card__button button button--primary" href="#">Заказать</a>
             </div>
           </li>
@@ -314,10 +314,10 @@
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden">Имя
-            <input class="subscribe-form__input" placeholder="Kuklachev@gmail.com" type="email" name="subscribe-email" required>
+            <input class="subscribe-form__input" placeholder="Kuklachev@gmail.com" type="email" name="subscribe-email" value="Kuklachev@gmail.com" required>
           </label>
-          <button class="subscribe-form__button button button--primary" type="submit">Подписаться</button>
         </form>
+        <button class=" subscribe-form__button button button--third" type="submit">Подписаться</button>
       </div>
     </section>
     <section class="contacts">
@@ -328,39 +328,42 @@
           Конюшенная, д. 19/8<br>Санкт-Петерсбург</address>
       </div>
       <div class="contacts__map">
-        <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-pc@1x.png 1x, images/map-pc@2x 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта города для нахождения адреса Кэт энерджи">
-        </picture>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo" href="#">
-        <img src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
-      </a>
+      <a class="footer__logo" href="#"><span class="visually-hidden">Логотип кэт энерджи</span><svg class="footer__logo-text" role="img" width="128" height="24">
+          <use href="icons/stack.svg#footer-logo"></use>
+        </svg></a>
       <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank">
-            <span class=" visually-hidden">Вконтакте</span>
+            <span class=" visually-hidden">Вконтакте</span><svg class="social-icon" role="img" width="28" height="22">
+              <use href="icons/stack.svg#vkontakte"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" rel="noreferrer noopener" target="_blank">
-            <span class=" visually-hidden">Youtube</span>
+            <span class=" visually-hidden">Youtube</span><svg class="social-icon" role="img" width="28" height="22">
+              <use href="icons/stack.svg#youtube"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegramm" href="https://t.me/htmlacademy" rel="noreferrer noopener" target="_blank">
-            <span class=" visually-hidden">Телеграмм</span>
+            <span class=" visually-hidden">Телеграмм</span><svg class="social-icon" role="img" width="28" height="22">
+              <use href="icons/stack.svg#telegram"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <div class="footer__developer developer">
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer noopener" target="_blank">
-          <span>HTML Academy</span>
+          <span>HTML Academy</span><svg class="developer__link-icon" role="img" width="27" height="34">
+            <use href="icons/stack.svg#logo-html"></use>
+          </svg>
         </a>
       </div>
     </div>

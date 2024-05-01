@@ -1,9 +1,9 @@
 .button {
   display: inline-flex;
-  background-color: $button-bg;
-  color: $button-color-text;
+  background-color: $primary-color;
+  color: $white;
   font-family: $secondary-font;
-  font-weight: $font-weight;
+  font-weight: $font-weight-normal;
   line-height: 20px;
   font-size: $font-size;
   text-transform: uppercase;
@@ -13,12 +13,38 @@
   padding: 10px 44px;
   cursor: pointer;
   align-items: center;
+
+
+  &:hover {
+    background-color: $primary-color-2;
+  }
+
+  &:active {
+    background-color: $primary-color-2;
+    color: $hover-color-text;
+  }
+
+  &:disabled {
+    color: #fefcfc;
+  }
 }
+
 
 .button--primary {
   //
 }
 
 .button--secondary {
+  background-color: $secondary-bg;
+  color: $primary-color-text;
+
+  &:hover,
+  &focus {
+    background-color: $hover-active-color;
+    color: $primary-color-text;
+  }
+}
+
+.button--third {
   //
 }

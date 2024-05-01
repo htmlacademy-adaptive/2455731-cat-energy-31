@@ -19,15 +19,16 @@
       <nav class="header__navigation navigation">
         <a class="navigation__logo site-logo" href="#">
           <picture>
-            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/icons/logo-pc.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/icons/logo-tablet.svg">
-            <img class="site-logo__image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи">
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-pc.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="site-logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Кэт энерджи">
           </picture>
-          <img class="site-logo__text" src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
+          <img class="site-logo__text" src="images/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
         </a>
-        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+        <button class="navigation__toggle navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="navigation__button-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+        </button>
+        <button class="navigation__toggle navigation__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         <ul class=" navigation__list">
           <li class="navigation__item navigation__item--current">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -36,7 +37,7 @@
             <a class="navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Подбор прогаммы</a>
+            <a class="navigation__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -58,26 +59,31 @@
         <div class="benefits__container container">
           <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits__list">
-            <li class="benefits__item">
+            <li class="benefits__item benefits__item--primary">
               <h3 class="benefits__item-title title-h3">Похудение</h3>
               <p class="benefits__item-description">Ваш кот весит больше собаки и почти утратил способность
                 лазить по деревьям? Пора на диету! Cat Energy Slim поможет
                 вашему питомцу сбросить лишний вес.</p>
-              <a class="benefits__card-link" href="catalog.html">Каталог slim</a>
+              <a class="benefits__card-link" href="catalog.html">Каталог slim<svg class="benefits__card-link-addition" focusable="false" role="img" width="32" height="10">
+                  <use href="icons/stack.svg#arrow-benefits"></use>
+                </svg></a>
+
             </li>
-            <li class="benefits__item">
+            <li class="benefits__item benefits__item--secondary">
               <h3 class="benefits__item-title title-h3">Набор массы</h3>
               <p class="benefits__item-description">Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить
                 необходимые мышцы!</p>
-              <a class="benefits__card-link" href="catalog.html">Каталог pro</a>
+              <a class="benefits__card-link" href="catalog.html">Каталог pro<svg class="benefits__card-link-addition" focusable="false" role="img" width="32" height="10">
+                  <use href="icons/stack.svg#arrow-benefits"></use>
+                </svg></a>
             </li>
           </ul>
         </div>
       </section>
       <section class="main__benefits-product product-description">
         <div class="product-description__container container">
-          <h2 class="product-description__title title-h1">Как это работает</h2>
+          <h2 class="product-description__title title-h2">Как это работает</h2>
           <ul class="product-description__list">
             <li class="product-description__item product-description__item--healthy">
               <p class="product-description__text">Функциональное питание
@@ -104,7 +110,7 @@
       </section>
       <section class="main__illustration illustration">
         <div class="illustration__content">
-          <h2 class="illustration__title title-h1">Живой пример</h2>
+          <h2 class="illustration__title title-h2">Живой пример</h2>
           <p class="illustration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
             обычный корм на Cat Energy Slim. Отличный результат
             без изнуряющих тренировок! При этом он не менял своих
@@ -122,11 +128,11 @@
         </div>
         <div class="illustration__slider">
           <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-before@1x.png 1x, images/cat-tablet-pc-before@2x.png 2x">
             <img src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" width="280" height="256" alt="Кот с лишним весом">
           </picture>
           <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-tablet-pc-after@1x.png 1x, images/cat-tablet-pc-after@2x.png 2x">
             <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот с нормальным весом">
           </picture>
         </div>
@@ -139,41 +145,40 @@
             Конюшенная, д. 19/8<br>Санкт-Петерсбург</address>
         </div>
         <div class="contacts__map">
-          <picture>
-            <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-pc@1x.png 1x, images/map-pc@2x 2x">
-            <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-            <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта города для нахождения адреса Кэт энерджи">
-          </picture>
         </div>
       </section>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <a class="footer__logo" href="#">
-        <img src="images/icons/logo-text.svg" width="101" height="18" alt="Логотип сайта Кэт энерджи">
-      </a>
+      <a class="footer__logo" href="#"><span class="visually-hidden">Логотип кэт энерджи</span><svg class="footer__logo-text" role="img" width="128" height="24">
+          <use href="icons/stack.svg#footer-logo"></use>
+        </svg></a>
       <ul class="footer__social social">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank">
-            <span class="visually-hidden">Вконтакте</span>
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" rel="noreferrer noopener" target="_blank"><span class="visually-hidden">Вконтакте</span><svg class="social-icon" role="img" width="28" height="22">
+              <use href="icons/stack.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class=" social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" rel="noreferrer noopener" target="_blank"><span class="visually-hidden">Youtube</span><svg class="social-icon" role="img" width="28" height="22">
+              <use href="icons/stack.svg#youtube"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" rel="noreferrer noopener" target="_blank">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegramm" href="https://t.me/htmlacademy" rel="noreferrer noopener" target="_blank">
-            <span class="visually-hidden">Телеграмм</span>
+          <a class="social__link social__link--telegramm" href="https://t.me/htmlacademy" rel="noreferrer noopener" target="_blank"><span class="visually-hidden">Телеграмм</span><svg class="social-icon" role="img" width="28" height="22">
+              <use href="icons/stack.svg#telegram"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <div class="footer__developer developer">
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer noopener" target="_blank">
-          <span>HTML Academy</span>
-        </a>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer noopener" target="_blank"><span>HTML Academy</span>
+          <svg class="developer__link-icon" role="img" width="27" height="34">
+            <use href="icons/stack.svg#logo-html"></use>
+          </svg></a>
       </div>
     </div>
   </footer>

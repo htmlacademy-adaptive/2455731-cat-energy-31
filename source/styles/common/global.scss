@@ -14,10 +14,15 @@ body {
   font-family: $primary-font;
   background-color: $primary-bg;
   font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-  color: $primary-color;
+  line-height: 20px;
+  font-weight: $font-weight-normal;
+  color: $primary-color-text;
   min-height: 100%;
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

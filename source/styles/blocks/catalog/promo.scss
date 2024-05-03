@@ -1,14 +1,19 @@
 .promo {
-  background-color: $accent-bg;
-  background-image: url("../../icons/stack.svg#icon_gift");
+  background-color: $primary-color;
 }
 
+.promo::before {
+  background-image: url("../../icons/stack.svg#gift");
+  width: 78px;
+  height: 80px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
 
 .promo__slogan {
   color: $white;
   line-height: 20px;
-}
-
-.promo-slogan {
-
 }

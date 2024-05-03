@@ -1,5 +1,5 @@
 .button {
-  display: inline-flex;
+  display: inline-block;
   background-color: $primary-color;
   color: $white;
   font-family: $secondary-font;
@@ -16,19 +16,23 @@
 
 
   &:hover {
-    background-color: $primary-color-2;
+    background-color: #5eaa2f;
   }
 
   &:active {
-    background-color: $primary-color-2;
-    color: $hover-color-text;
+    background-color: #5eaa2f;
+    color: #9f9d9d;
   }
 
-  &:disabled {
-    color: #fefcfc;
-  }
+  //&:disabled {
+  //color: ;
 }
 
+
+.button:disabled {
+  color: #e7e7e7;
+  pointer-events: none;
+}
 
 .button--primary {
   //
@@ -39,8 +43,8 @@
   color: $primary-color-text;
 
   &:hover,
-  &focus {
-    background-color: $hover-active-color;
+  &:focus {
+    background-color: #ebebeb;
     color: $primary-color-text;
   }
 }

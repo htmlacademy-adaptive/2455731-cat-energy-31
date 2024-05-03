@@ -7,12 +7,11 @@
 }
 
 .illustration__title {
-  color: $secondary-color-text;
+  color: $black;
 }
 
 .illustration__description {
   font-family: $primary-font;
-  font-weight: $font-weight-normal;
   font-size: 14px;
   line-height: 18px;
   color: $primary-color-text;
@@ -27,8 +26,7 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  font-weight: $font-weight-normal;
-  color: $secondary-color-text;
+  color: $black;
 }
 
 .illustration__stats-description {
@@ -38,10 +36,9 @@
 
 .illustration__resume {
   font-family: $secondary-font;
-  font-weight: $font-weight-normal;
   line-height: 20px;
   font-size: 14px;
-  color: $secondary-color-text;
+  color: $black;
 }
 
 .illustration__slider {

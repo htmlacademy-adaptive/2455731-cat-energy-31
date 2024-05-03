@@ -4,9 +4,8 @@
 
 .developer__link {
   display: block;
-  text-decoration: none;
   color: $primary-color-text;
-  line-height: auto;
+  line-height: 20px;
 
   &:hover,
   &:focus {
@@ -18,15 +17,24 @@
   }
 }
 
-.developer__link-icon {
-  color: $secondary-color-2;
+.developer__link::after {
+  mask-image: url("../../icons/stack.svg#logo-html");
+  display: inline-block;
+  content: "";
+  width: 27px;
+  height: 34px;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  margin: 0 20px;
+  background-color: $secondary-color-2;
+}
 
-  &:hover,
-  &:focus {
-    color: $primary-color;
-  }
+.developer__link:hover::after,
+.developer__link:focus::after {
+  background-color: $primary-color;
+}
 
-  &:active {
-    opacity: 0.4;
-  }
+.developer__link:active::after {
+  opacity: 0.8;
 }

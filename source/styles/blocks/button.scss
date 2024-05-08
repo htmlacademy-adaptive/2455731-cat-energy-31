@@ -3,16 +3,15 @@
   background-color: $primary-color;
   color: $white;
   font-family: $secondary-font;
-  font-weight: $font-weight-normal;
   line-height: 20px;
-  font-size: $font-size;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
   min-height: 40px;
-  padding: 10px 44px;
+  width: 280px;
+  padding: 10px 20px;
   cursor: pointer;
-  align-items: center;
+  text-align: center;
 
 
   &:hover {
@@ -24,14 +23,11 @@
     color: #9f9d9d;
   }
 
-  //&:disabled {
-  //color: ;
-}
-
-
-.button:disabled {
-  color: #e7e7e7;
-  pointer-events: none;
+  &:disabled {
+    color: #e7e7e7;
+    opacity: 0.2;
+    pointer-events: none;
+  }
 }
 
 .button--primary {
@@ -50,5 +46,7 @@
 }
 
 .button--third {
-  //
+  min-height: 56px;
+  font-size: 20px;
+  line-height: 26px;
 }

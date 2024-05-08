@@ -9,6 +9,8 @@
   color: $primary-color-text;
   border: 1px solid #e7e7e7;
   margin-bottom: 16px;
+  padding: 13px;
+  min-width: 280px;
 
   &:hover {
     border: $secondary-border;
@@ -17,8 +19,11 @@
   &:focus {
     border: 2px solid #444444;
   }
-}
 
+  &:disabled {
+    opacity: 0.1;
+  }
+}
 
 .subscribe__button {
   //

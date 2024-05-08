@@ -1,9 +1,30 @@
 .header {
-  //
+  display: flex;
+  flex-direction: column;
 }
 
 .header__container {
-  //
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 704px;
+    margin: 0 auto;
+
+    .navigation__toggle {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+
+    .navigation__toggle {
+      display: none;
+    }
+  }
 }
 
 .header__navigation {

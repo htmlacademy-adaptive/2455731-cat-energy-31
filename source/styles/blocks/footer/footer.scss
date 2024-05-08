@@ -1,9 +1,24 @@
 .footer {
   background-color: $secondary-bg;
+  display: flex;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0;
+  }
 }
 
 .footer__container {
-  //
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -12,23 +27,32 @@
 
   &:hover,
   &:focus {
-    color: #3e3e3e;
+    opacity: 0.8;
   }
 
   &:active {
-    color: #6b6b6b;
+    opacity: 0.6;
   }
 }
 
 .footer__logo-text {
-  //
+  display: flex;
+  margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
-
 .footer__social {
-  //
+  display: flex;
+  justify-content: center;
 }
 
 .footer__developer {
-  //
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

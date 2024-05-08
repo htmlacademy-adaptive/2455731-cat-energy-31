@@ -1,5 +1,4 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-
 *,
 *::before,
 *::after {
@@ -17,6 +16,7 @@ body {
   line-height: 20px;
   font-weight: $font-weight-normal;
   color: $primary-color-text;
+  min-width: 320px;
   min-height: 100%;
   margin: 0;
 }

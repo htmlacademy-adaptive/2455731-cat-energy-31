@@ -1,5 +1,5 @@
 .developer {
-  //
+  display: flex;
 }
 
 .developer__link {
@@ -26,7 +26,7 @@
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-  margin: 0 20px;
+  margin: 0 0 0 95px;
   background-color: $secondary-color-2;
 }
 

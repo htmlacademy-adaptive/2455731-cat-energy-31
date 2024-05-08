@@ -3,7 +3,11 @@
 }
 
 .main__hero {
-  //
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .main__benefits {

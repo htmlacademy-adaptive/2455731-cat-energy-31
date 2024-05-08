@@ -1,17 +1,44 @@
 .hero {
-  //
-}
+  background-color: #767474;
 
 
-.hero__container {
-  background-color: $accent-bg;
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
+
+
+  .hero__container {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 600px 600px;
+      grid-template-rows: 200px 100px 150px;
+      column-gap: 20px;
+    }
+  }
 }
 
 .hero__title {
   color: $white;
-  margin-bottom: 25px;
-}
+  margin: 0 0 25px;
+  text-align: center;
 
+  @media (min-width: $tablet-width) {
+    color: $black;
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $black;
+    margin: 0;
+    text-align: left;
+  }
+}
 
 .hero__subtitle {
   font-family: $secondary-font;
@@ -20,13 +47,41 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  margin: 0 0 29;
+  margin: 0 0 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: left;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 
 .hero__image {
-  //
+  vertical-align: middle;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/6;
+    grid-row: 1/5;
+  }
 }
 
 .hero__button {
-  //
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 230px;
+    left: 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }

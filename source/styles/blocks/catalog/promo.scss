@@ -1,5 +1,6 @@
 .promo {
-  background-color: $primary-color;
+  background-color: #666464;
+  padding: 58px 60px 43px;
 }
 
 .promo::before {
@@ -16,4 +17,6 @@
 .promo__slogan {
   color: $white;
   line-height: 20px;
+  text-align: center;
+  margin: 0;
 }

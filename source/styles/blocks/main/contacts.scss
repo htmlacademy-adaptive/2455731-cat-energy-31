@@ -3,7 +3,11 @@
 }
 
 .contacts__container {
-  //
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .contacts__offer {
@@ -12,6 +16,8 @@
   color: $accent-color-text;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
+  width: 120px;
 }
 
 .contacts__text {
@@ -19,6 +25,9 @@
   line-height: 20px;
   color: $primary-color-text;
   font-style: normal;
+  margin: 0;
+  padding: 0;
+  width: 120px;
 }
 
 .contacts__map {

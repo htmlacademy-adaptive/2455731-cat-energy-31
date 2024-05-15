@@ -1,12 +1,30 @@
 .title-h3 {
+  position: relative;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   color: $black;
-  text-align: center;
+  text-align: left;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
-.title-h3--line {
-  //
+.title-h3--line::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  min-width: 108px;
+  height: 2px;
+  background-color: $accent-border-color;
+  top: 12px;
+  right: -20px;
 }

@@ -2,6 +2,7 @@
   //
 }
 
+
 .product-description__container {
   //
 }
@@ -16,19 +17,47 @@
 .product-description__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
 
-.product-description__item {
-  padding: 0;
-  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 230px;
-    margin-right: 80px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #ebebeb;
+    counter-reset: test;
+    margin-bottom: 47px;
+    margin-left: -60px;
+    margin-right: -60px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    margin: 0 0 69px;
+    padding: 0;
+  }
+}
+
+
+.product-description__item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 153px 0 0;
+    max-height: 280px;
+    max-width: 230px;
+    padding: 40px 0 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 
 
@@ -40,11 +69,14 @@
     background-color: $primary-color;
     width: 60px;
     height: 60px;
+    margin-right: 20px;
 
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
+      margin-bottom: 31px;
+      margin-right: 0;
     }
 
     @media (min-width: $desktop-width) {
@@ -53,6 +85,26 @@
     }
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .product-description__item:nth-child(even) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product-description__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-description__item:not(:last-child) {
+    margin-right: 100px;
+  }
+}
+
 
 .product-description__item--healthy::before {
   background-image: url("../../icons/stack.svg#leaf");
@@ -74,10 +126,35 @@
   background-size: 26px 31px;
 }
 
+@media (min-width: $tablet-width) {
+  .product-description__list .product-description__item::after {
+    counter-increment: test;
+    content: counter(test);
+    position: absolute;
+    display: inline-block;
+    right: 5px;
+    top: 0;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: $secondary-font;
+    font-weight: 400;
+    color: #f2f2f2;
+  }
+}
+
 .product-description__text {
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
   color: $primary-color-text;
   margin: 0;
+  max-width: 200px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+  }
 }

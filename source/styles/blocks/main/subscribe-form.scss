@@ -1,5 +1,7 @@
 .subscribe-form {
-  //
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .subscribe-form__input {
@@ -23,8 +25,19 @@
   &:disabled {
     opacity: 0.1;
   }
+
+
+  @media (min-width: $tablet-width) {
+    min-width: 376px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 496px;
+  }
 }
 
+
 .subscribe__button {
-  //
+  min-width: 256px;
 }

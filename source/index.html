@@ -27,7 +27,7 @@
         </a>
         <button class="navigation__toggle navigation__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class=" navigation__list">
+        <ul class=" navigation__list navigation__list--open">
           <li class="navigation__item navigation__item--current">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
@@ -131,17 +131,23 @@
             <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="Кот с нормальным весом">
           </picture>
         </div>
-
       </div>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__container container">
-        <p class="contacts__offer">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-        <address class="contacts__text">ул. Большая<br>
-          Конюшенная, д. 19/8<br><span>Санкт-Петерсбург</span></address>
+        <div class="contacts__info">
+          <p class="contacts__offer">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+          <address class="contacts__text">ул. Большая<br>
+            Конюшенная, д. 19/8<br><span>Санкт-Петерсбург</span></address>
+        </div>
       </div>
       <div class="contacts__map">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/location-pc@1x.png 1x, images/location-pc@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x">
+          <img class="contacts__image" src="images/location@3x@1x.png" srcset="images/location@3x@2x.png 2x" width="320" height="362" alt="Карта с адресом Кэт энерджи">
+        </picture>
       </div>
     </section>
 

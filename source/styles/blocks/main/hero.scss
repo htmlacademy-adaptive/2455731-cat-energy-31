@@ -1,24 +1,44 @@
 .hero {
-  background-color: #767474;
+  background-image: url("../../images/hero-bg-mobile@1x.png"); //linear-gradient(rgba(104, 183, 56, 0.85));
+  background-repeat: no-repeat;
+  background-size: 320px 302px 100% 100%;
+  background-position: top;
+  padding-top: 27px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/hero-bg-mobile@2x.png");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    padding: 0;
+    background-image: none;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    //
-  }
+    background-image: url("../../images/hero-bg-pc@1x.png");
+    background-size: 720px 694px 100% 100%;
+    background-position: top right;
+    padding: 27px 0 0;
 
 
-  .hero__container {
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: 600px 600px;
-      grid-template-rows: 200px 100px 150px;
-      column-gap: 20px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/hero-bg-pc@2x.png");
+      background-size: 720px auto;
     }
+  }
+}
+
+.hero__container {
+  //display: flex;
+  //flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    //display: grid;
+    //grid-template-columns: 610px 610px;
+    //grid-template-rows: 180px auto 300px;
   }
 }
 
@@ -27,16 +47,20 @@
   margin: 0 0 25px;
   text-align: center;
 
+
   @media (min-width: $tablet-width) {
     color: $black;
-    margin: 0;
     text-align: left;
+    margin: 0 0 40px 90px;
   }
 
   @media (min-width: $desktop-width) {
     color: $black;
-    margin: 0;
+    //margin: 0 0 40px 130px;
     text-align: left;
+    //grid-column: 1/2;
+    //grid-row: 1/2;
+    margin: 0;
   }
 }
 
@@ -54,34 +78,40 @@
     line-height: 20px;
     color: $black;
     text-align: left;
-    margin: 0;
+    margin: 0 0 21px 90px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
-    grid-row: 2/3;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: left;
+    //grid-column: 1/2;
+    // grid-row: 2/3;
+    //margin: 0 0 52px 130px;
   }
 }
 
 .hero__image {
   vertical-align: middle;
-
-  @media (min-width: $desktop-width) {
-    grid-column: 4/6;
-    grid-row: 1/5;
-  }
+  //grid-column: 1/2;
+  //grid-row: 1/4;
 }
 
 .hero__button {
+  text-decoration: none;
+
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 230px;
-    left: 185px;
+    content: "";
+    top: 225px;
+    left: 160px;
+    max-width: 244px;
+    max-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 3/4;
+    //grid-column: 1/2;
+    //grid-row: 3/4;
   }
 }

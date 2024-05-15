@@ -1,5 +1,11 @@
 .addition-card {
-  //
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: $secondary-border;
+    padding: 26px 38px 28px;
+  }
 }
 
 .addition-card__title {
@@ -7,19 +13,47 @@
   line-height: 16px;
   color: $additional-color-text;
   text-transform: uppercase;
-}
+  margin: 14px 0 13px;
+  width: 100%;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
 
 .addition-card__description {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 60%;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 }
 
+.addition-card__text {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 40%;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
 
 .addition-card__button {
-  //
+  margin: 15px 0 18px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 632px;
+    margin: 0 auto;
+  }
 }
 
 .addition__promo {
-  //
+  margin: 36px 0 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+  }
 }

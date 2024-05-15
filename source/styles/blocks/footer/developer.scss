@@ -1,9 +1,11 @@
 .developer {
-  display: flex;
+  //
 }
 
 .developer__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
   color: $primary-color-text;
   line-height: 20px;
 
@@ -15,7 +17,13 @@
   &:active {
     opacity: 0.4;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 168px;
+    align-items: center;
+  }
 }
+
 
 .developer__link::after {
   mask-image: url("../../icons/stack.svg#logo-html");
@@ -26,7 +34,6 @@
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-  margin: 0 0 0 95px;
   background-color: $secondary-color-2;
 }
 

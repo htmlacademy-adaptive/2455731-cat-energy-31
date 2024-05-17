@@ -1,8 +1,13 @@
 .header {
   border-bottom: 1px solid #ebebeb;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
   }
 }
 
@@ -18,6 +23,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 55px 0 24px;
+    margin: 56px 0 24px;
   }
 }

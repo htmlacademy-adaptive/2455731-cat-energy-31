@@ -1,5 +1,5 @@
 .addition {
-  //
+  display: flex;
 }
 
 .addition__container {
@@ -12,19 +12,29 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
-    margin-bottom: 80px;
+    margin: 0 0 80px 40px;
     padding: 0;
   }
 }
 
 .addition__list {
-  border: $secondary-border;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 0 -38px;
+    margin: 0 0 70px;
+    border: $secondary-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    border: none;
+    //border-top: $secondary-border;
+    //display: flex;
+    // flex-wrap: wrap;
+    padding: 0;
   }
 }
 

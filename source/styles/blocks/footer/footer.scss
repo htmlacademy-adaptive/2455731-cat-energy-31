@@ -47,6 +47,10 @@
     height: 24px;
     width: 128px;
   }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
 }
 
 .footer__social {

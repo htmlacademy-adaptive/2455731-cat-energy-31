@@ -1,21 +1,19 @@
 .navigation {
-  position: relative;
   display: flex;
   justify-content: space-between;
+  background-color: $white;
 
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 709px;
-    margin-top: 39px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 1220px;
-    margin-top: 55px;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,14 +40,12 @@
 
 .navigation__toggle {
   background-color: $secondary-color;
-  position: absolute;
   display: block;
   padding: 0;
   cursor: pointer;
   height: 24px;
   width: 24px;
-  top: 6px;
-  right: 0;
+  margin-top: 7px;
 
 
   &:hover {
@@ -111,18 +107,18 @@
 //}
 
 .navigation__list--open {
-  //@media (min-width: $mobile-with-only) {
-  background-color: $primary-bg;
   position: absolute;
   z-index: 1;
-  top: 53px;
-  left: -20px;
+  top: 100%;
+  left: 0;
   width: 100vw;
+  background-color: $white;
   //display: none;
 
 
   @media (min-width: $tablet-width) {
     position: static;
+    background: none;
   }
 }
 
@@ -165,6 +161,7 @@
   text-decoration: none;
   display: block;
   font-family: $secondary-font;
+  font-weight: $font-weight-normal;
   font-size: 20px;
   line-height: 20px;
   color: $black;
@@ -191,7 +188,6 @@
     font-size: 20px;
     line-height: 20px;
     color: $white;
-    background-color: aquamarine;
     padding: 20px 5px 10px;
   }
 }

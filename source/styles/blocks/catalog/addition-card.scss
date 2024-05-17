@@ -1,15 +1,23 @@
 .addition-card {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: $secondary-border;
+
 
   @media (min-width: $tablet-width) {
-    border-bottom: $secondary-border;
     padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    padding: 15px 0;
   }
 }
 
 .addition-card__title {
   font-family: $secondary-font;
+  font-weight: $font-weight-normal;
   line-height: 16px;
   color: $additional-color-text;
   text-transform: uppercase;
@@ -18,42 +26,80 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    display: flex;
+    width: fit-content;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-self: center;
   }
 }
 
+
 .addition-card__description {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 60%;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .addition-card__text {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  width: 40%;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .addition-card__button {
-  margin: 15px 0 18px;
+  margin: 15px auto 18px;
+  min-width: 280px;
+  max-height: 40px;
+
 
   @media (min-width: $tablet-width) {
     min-width: 632px;
-    margin: 0 auto;
+    margin: 25px 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 244px;
+    height: 40px;
+    margin: 0;
   }
 }
+
 
 .addition__promo {
   margin: 36px 0 40px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 96px;
+    margin: 0;
   }
 }

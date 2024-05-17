@@ -1,8 +1,9 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
+  gap: 24px;
   border-top: $primary-border;
   border-bottom: $primary-border;
   padding: 20px 0;

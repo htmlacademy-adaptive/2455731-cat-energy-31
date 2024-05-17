@@ -29,18 +29,17 @@
 
   @media (min-width: $desktop-width) {
     padding: 60px 79px;
-    width: 565px;
-    height: 199px;
+    min-width: 565px;
+    min-height: 199px;
     position: absolute;
     bottom: 106px;
-    left: 110px;
     background-color: $primary-bg;
   }
 }
 
-
 .contacts__offer {
   font-family: $secondary-font;
+  font-weight: $font-weight-normal;
   line-height: 20px;
   color: $accent-color-text;
   text-transform: uppercase;
@@ -80,4 +79,8 @@
 
 .contacts__map {
   width: 100%;
+}
+
+.contacts__image {
+  vertical-align: middle;
 }

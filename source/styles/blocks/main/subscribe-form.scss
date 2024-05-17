@@ -1,11 +1,13 @@
 .subscribe-form {
   @media (min-width: $tablet-width) {
-    display: flex;
+    //
   }
 }
 
 .subscribe-form__input {
   font-family: $secondary-font;
+  font-weight: $font-weight-normal;
+  text-transform: uppercase;
   font-size: 20px;
   line-height: 20px;
   color: $primary-color-text;
@@ -39,5 +41,10 @@
 
 
 .subscribe__button {
-  min-width: 256px;
+  min-width: 280px;
+  max-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+  }
 }

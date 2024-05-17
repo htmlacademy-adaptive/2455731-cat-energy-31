@@ -1,5 +1,11 @@
 .product-description {
-  //
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 
@@ -25,12 +31,8 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    border-bottom: 1px solid #ebebeb;
     counter-reset: test;
     margin-bottom: 47px;
-    margin-left: -60px;
-    margin-right: -60px;
-    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {

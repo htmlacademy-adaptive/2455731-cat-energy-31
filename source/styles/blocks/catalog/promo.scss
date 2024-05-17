@@ -7,7 +7,7 @@
   min-height: 290px;
   background-image: url("../../images/promo-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: 280px 290px 100% 100%;
+  background-size: cover;
   background-position: top left bottom right;
 
   @media (min-resolution: 2dppx) {
@@ -19,7 +19,9 @@
     background-color: #666464;
     background-image: url("../../images/promo-tablet@1x.png");
     background-repeat: no-repeat;
-    background-size: 707px 200px 100% 100%;
+    width: 707px;
+    height: 200px;
+    background-size: cover;
     background-position: center;
     padding: 57px 60px 77px;
 
@@ -34,7 +36,11 @@
     background-color: #666464;
     background-image: url("../../images/promo-pc@1x.png");
     background-repeat: no-repeat;
-    background-size: 245px 288px 100% 100%;
+    background-size: cover;
+    background-position: center;
+    width: 245px;
+    height: 288px;
+    padding: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/promo-pc@2x.png");
@@ -70,5 +76,9 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     text-align: left;
+
+    @media (min-width: $desktop-width) {
+      //
+    }
   }
 }

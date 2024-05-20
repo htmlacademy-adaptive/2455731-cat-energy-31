@@ -3,15 +3,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: $secondary-border;
+  padding: 14px 0 18px;
+  margin: 0;
 
 
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;
+    display: grid;
+    grid-template-columns: 380px 150px 90px;
+    grid-template-rows: 1fr auto;
+    row-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 896px;
-    padding: 15px 0;
+    padding: 15px 0 17px;
+    display: grid;
+    grid-template-columns: 325px 243px 1fr auto;
+    grid-template-rows: 1fr;
+    row-gap: none;
   }
 }
 
@@ -21,12 +30,12 @@
   line-height: 16px;
   color: $additional-color-text;
   text-transform: uppercase;
-  margin: 14px 0 13px;
+  margin: 0 0 13px;
   width: 100%;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    display: flex;
     width: fit-content;
     font-size: 20px;
     line-height: 20px;
@@ -38,50 +47,51 @@
   }
 }
 
-
 .addition-card__description {
   display: flex;
   font-size: 14px;
-  line-height: 20px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    justify-content: center;
+    display: grid;
+    justify-content: end;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    align-self: center;
+    justify-content: start;
+    align-items: center;
   }
 }
 
 .addition-card__text {
-  display: flex;
+  //display: flex;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     font-size: 16px;
+    justify-self: end;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    justify-content: start;
     align-self: center;
   }
 }
 
 .addition-card__button {
-  margin: 15px auto 18px;
+  margin: 15px auto 0;
   min-width: 280px;
   max-height: 40px;
 
 
   @media (min-width: $tablet-width) {
     min-width: 632px;
-    margin: 25px 0 auto;
+    margin: 0 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +100,6 @@
     margin: 0;
   }
 }
-
 
 .addition__promo {
   margin: 36px 0 40px;

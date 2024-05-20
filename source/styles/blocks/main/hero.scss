@@ -1,7 +1,7 @@
 .hero {
-  background-image: url("../../images/hero-bg-mobile@1x.png"), linear-gradient(to left, #54922dd9 302px 320px);
+  background: linear-gradient(to bottom, #68b738 0% 60%, #ffffff 60%, #ffffff 40%), url("../../images/hero-bg-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: 320px 302px 100% 100%;
+  background-size: auto auto;
   background-position: center top;
   padding: 27px 0 0;
 
@@ -19,18 +19,21 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 98px;
+
     &::before {
       position: absolute;
       content: "";
       background-image: url("../../images/hero-bg-pc@1x.png");
-      background-size: 720px 694px 100% 100%;
+      background-size: auto auto;
       background-position: 100%;
       background-repeat: no-repeat;
       display: block;
       height: 694px;
-      width: 720px;
-      top: -139px;
+      width: 1040px;
       right: 0;
+      top: -138px;
+      bottom: 0;
     }
 
     @media (min-resolution: 2dppx) {
@@ -78,7 +81,13 @@
 }
 
 .hero__image {
-  vertical-align: middle;
+  @media (min-width: $desktop-width) {
+    z-index: 10;
+    position: absolute;
+    left: 545px;
+    top: 0;
+    //margin: 0 auto;
+  }
 }
 
 .hero__button {
@@ -90,8 +99,10 @@
     content: "";
     top: 225px;
     left: 68px;
-    max-width: 244px;
-    max-height: 54px;
+    min-width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {

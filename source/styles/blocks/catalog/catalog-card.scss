@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 55px 48px auto;
-  padding: 20px 20px 0;
+  padding: 20px 20px 25px;
   border-top: 1px solid #ebebeb;
   margin: 0;
 
@@ -12,14 +12,15 @@
     flex-wrap: wrap;
     border: none;
     padding: 0 37px 40px;
-    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, rgb(255, 255, 255)  0% 13%, #f2f2f2 13%, #f2f2f2 87%);
+    min-height: 511px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 38px 40px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255)  0% 10%, #f2f2f2 10%, #f2f2f2 90%);
   }
 }
-
 
 .catalog-card__link-image {
   grid-column: 1/2;
@@ -29,17 +30,15 @@
   padding: 0 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    //margin-bottom: 22px;
     padding: 0;
+    margin: 0 auto;
+    object-position: center;
   }
 }
 
 .catalog-card__picture {
-  vertical-align: middle;
-
-
   @media (min-width: $tablet-width) {
-    object-position: center;
     object-fit: scale-down;
   }
 }
@@ -127,17 +126,19 @@
 .catalog-card--secondary {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
-  margin-bottom: 25px;
+  padding: 25px 20px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     border: 1px solid #f2f2f2;
     margin: 0;
-    display: block;
+    background: none;
     padding: 50px 37px 40px;
-    background-color: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
   }
 }
 
@@ -156,7 +157,16 @@
     height: 60px;
     width: 60px;
     margin: 0 auto 50px;
+    padding: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 40px;
+  }
+}
+
+.catalog-card__wrapper {
+  //
 }
 
 .catalog-card__text {
@@ -170,15 +180,14 @@
   margin: 0 0 8px;
 
   @media (min-width: $tablet-width) {
-    max-width: 134px;
     margin: 0 auto 23px;
-    line-height: 20px;
-    font-size: 24px;
+    line-height: 24px;
+    font-size: 20px;
+    max-width: 134px;
   }
 
-  @media (min-width: $tablet-width) {
-
-    margin: 0 auto 26px;
+  @media (min-width: $desktop-width) {
+    margin: 0 18px 26px;
   }
 }
 
@@ -194,12 +203,15 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 90px;
+  }
 }
 
 .catalog-card__button {
   text-decoration: none;
   margin-top: 17px;
-  margin-bottom: 25px;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -214,14 +226,15 @@
 }
 
 .catalog-card__button-additional {
-
   min-width: 280px;
+
 
   @media (min-width: $tablet-width) {
     min-width: 250px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 169px;
+    min-width: 169px;
   }
 }

@@ -3,5 +3,7 @@
 }
 
 .page__body {
-  position: relative;
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }

@@ -1,5 +1,5 @@
 .addition {
-  display: flex;
+  //
 }
 
 .addition__container {
@@ -9,11 +9,18 @@
 .addition__title {
   border-bottom: $secondary-border;
   padding-bottom: 35px;
+  margin: 0;
+
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     margin: 0 0 80px 40px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 72px;
+    text-align: left;
   }
 }
 
@@ -23,15 +30,15 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     margin: 0 0 70px;
     border: $secondary-border;
+    max-width: 896px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 0 96px;
     border: none;
-    //border-top: $secondary-border;
+    border-top: $secondary-border;
     //display: flex;
     // flex-wrap: wrap;
     padding: 0;

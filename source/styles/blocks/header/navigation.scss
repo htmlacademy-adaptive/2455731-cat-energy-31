@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: $white;
+  align-items: center;
 
 
   @media (min-width: $tablet-width) {
@@ -23,7 +24,6 @@
   }
 }
 
-
 .navigation__logo {
   text-decoration: none;
   height: 38px;
@@ -40,12 +40,14 @@
 
 .navigation__toggle {
   background-color: $secondary-color;
-  display: block;
+  //color: none;
+  display: inline-block;
+  content: "";
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
   padding: 0;
   cursor: pointer;
-  height: 24px;
-  width: 24px;
-  margin-top: 7px;
 
 
   &:hover {
@@ -62,17 +64,16 @@
   }
 }
 
-.navigation__toggle--open {
+.navigation__toggle--closed {
   mask-image: url("../../icons/stack.svg#button-open-mobile");
-  mask-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
 }
 
-.navigation__toggle--close {
+.navigation__toggle--opened {
   mask-image: url("../../icons/stack.svg#button-close-mobile");
-  mask-repeat: no-repeat;
-  width: 18px;
-  height: 18px;
-  display: none;
+  width: 20px;
+  height: 20px;
 }
 
 .navigation__list {
@@ -86,23 +87,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    list-style-type: none;
-    text-transform: uppercase;
-    padding: 0;
     max-width: 436px;
   }
 
   @media (min-width: $desktop-width) {
-    list-style-type: none;
-    text-transform: uppercase;
-    padding: 0;
     max-width: 475px;
   }
 }
 
-//.navigation__list:not(.navigation__toggle--open) {
-// @media (min-width: $mobile-with-only) {
-//  display: none;
+//.navigation__list:not(.navigation__toggle--opened) {
+//  @media (min-width: $mobile-width-only) {
+//    display: none;
 // }
 //}
 
@@ -115,12 +110,18 @@
   background-color: $white;
   //display: none;
 
-
   @media (min-width: $tablet-width) {
     position: static;
     background: none;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .navigation__toggle--closed + .navigation__list--open {
+    display: none;
+  }
+}
+
 
 .navigation__item {
   border-top: 1px solid #ebebeb;
@@ -166,7 +167,7 @@
   line-height: 20px;
   color: $black;
   cursor: pointer;
-  padding: 22px 0 24px;
+  padding: 22px 0 23px;
   text-align: center;
 
 
@@ -189,5 +190,11 @@
     line-height: 20px;
     color: $white;
     padding: 20px 5px 10px;
+  }
+}
+
+.navigation__link--secondary {
+  @media (min-width: $desktop-width) {
+    color: $black;
   }
 }

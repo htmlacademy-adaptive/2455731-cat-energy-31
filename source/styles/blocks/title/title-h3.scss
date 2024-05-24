@@ -6,7 +6,10 @@
   line-height: 24px;
   color: $black;
   text-align: left;
-  //margin: 0;
+  width: fit-content;
+  background: $white;
+  box-shadow: -20px 0 0 0 $white, 40px 0 0 0 $white;
+
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -21,11 +24,12 @@
 
 .title-h3--line::after {
   content: "";
-  display: inline-block;
   position: absolute;
-  min-width: 108px;
+  width: 100vw;
   height: 2px;
   background-color: $accent-border-color;
-  top: 12px;
-  right: -20px;
+  top: 9px;
+  right: 0;
+  z-index: -1;
+  box-shadow: 100vw 0 0 0 $accent-border-color;
 }

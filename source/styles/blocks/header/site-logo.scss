@@ -27,6 +27,11 @@
 .site-logo__text {
   display: block;
   height: 18px;
+  width: 101px;
+
+  @media (min-width: $tablet-width) {
+    //
+  }
 
   @media (min-width: $desktop-width) {
     height: 21px;

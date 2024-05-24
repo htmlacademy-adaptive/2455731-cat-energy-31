@@ -6,15 +6,11 @@
 
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 709px;
+    //
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 1220px;
+    //
   }
 
   @media (min-width: $tablet-width) {
@@ -39,8 +35,7 @@
 }
 
 .navigation__toggle {
-  background-color: $secondary-color;
-  //color: none;
+  background-color: $black;
   display: inline-block;
   content: "";
   mask-size: contain;
@@ -122,7 +117,6 @@
   }
 }
 
-
 .navigation__item {
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
@@ -130,6 +124,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     position: relative;
+    margin-left: -9px;
   }
 }
 
@@ -139,7 +134,7 @@
       content: "";
       position: absolute;
       display: inline-block;
-      width: 64px;
+      width: calc(100% - 10px);
       height: 2px;
       background-color: $accent-border-color;
       top: 46px;
@@ -149,14 +144,11 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      background-color: $white;
-      width: 68px;
       top: 49px;
       left: 5px;
     }
   }
 }
-
 
 .navigation__link {
   text-decoration: none;
@@ -188,13 +180,12 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    color: $white;
-    padding: 20px 5px 10px;
+    padding: 19px 5px 11px;
   }
 }
 
 .navigation__link--secondary {
   @media (min-width: $desktop-width) {
-    color: $black;
+    color: $white;
   }
 }

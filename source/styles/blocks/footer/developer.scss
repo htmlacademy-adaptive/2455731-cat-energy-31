@@ -1,5 +1,5 @@
 .developer {
-  //
+  padding-top: 4px;
 }
 
 .developer__link {
@@ -35,6 +35,7 @@
   mask-repeat: no-repeat;
   mask-position: center;
   background-color: $secondary-color-2;
+  margin-top: -5px;
 }
 
 .developer__link:hover::after,

@@ -1,19 +1,19 @@
 .hero {
-  background: url("../../images/hero-bg-mobile@1x.png"), linear-gradient(to bottom, #62a53e 64%, #ffffff 65%, #ffffff 36%);
+  background: image-set("../../images/hero-bg-mobile@1x.png" type("image/png"), "../../images/hero-bg-mobile@1x.webp" type("image/webp")), linear-gradient(to bottom, #62a53e 64%, #ffffff 65%, #ffffff 36%);
   background-repeat: no-repeat;
-  background-size: auto 302px, auto;
+  background-size: auto;
   background-position: center top;
   padding: 27px 0 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/hero-bg-mobile@2x.png");
+    background: image-set("../../images/hero-bg-mobile@2x.png" type("image/png"), "../../images/hero-bg-mobile@2x.webp" type("image/webp")), linear-gradient(to bottom, #62a53e 64%, #ffffff 65%, #ffffff 36%);
     background-size: 320px auto;
   }
 
   @media (min-width: $tablet-width) {
     background-color: $white;
     background-image: none;
-    padding: 0;
+    padding: 65px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +24,7 @@
     &::before {
       position: absolute;
       content: "";
-      background: url("../../images/hero-bg-pc@1x.png"), linear-gradient(#62a53e 720px 694px);
+      background: image-set("../../images/hero-bg-pc-1@1x.png" type("image/png"), "../../images/hero-bg-pc-1@1x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
       background-size: cover;
       background-position: auto 694px, auto auto;
       background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../../images/hero-bg-pc@2x.png");
+        background: image-set("../../images/hero-bg-pc-1@2x.png" type("image/png"), "../../images/hero-bg-pc-1@2x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
         background-size: 720px auto;
       }
     }

@@ -1,13 +1,15 @@
 .header {
   border-bottom: 1px solid #ebebeb;
   position: relative;
+  padding: 13px 0 15px;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 25px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    //
+    padding: 55px 0 0;
   }
 }
 
@@ -16,13 +18,13 @@
 }
 
 .header__navigation {
-  margin: 13px 0 15px;
+  //
 
   @media (min-width: $tablet-width) {
-    margin: 25px 0 65px;
+    //
   }
 
   @media (min-width: $desktop-width) {
-    margin: 56px 0 74px;
+    //
   }
 }

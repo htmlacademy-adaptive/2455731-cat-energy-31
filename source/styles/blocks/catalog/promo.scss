@@ -4,18 +4,18 @@
   padding: 59px 43px 60px;
   max-width: 280px;
   max-height: 290px;
-  background: image-set("../../images/promo-mobile@1x.png" type("image/png") ", ../../images/promo-mobile@1x.webp" type("image/webp")), linear-gradient(#62a53e 280px 290px);
+  background: image-set("../../images/promo-mobile@1x.webp" type("image/webp"), "../../images/promo-mobile@1x.png" type("image/png")), linear-gradient(#62a53e 280px 290px);
   background-repeat: no-repeat;
   background-size: cover, auto;
   background-position: center;
 
   @media (min-resolution: 2dppx) {
-    background: image-set("../../images/promo-mobile@2x.png" type("image/png"), "../../images/promo-mobile@2x.webp" type("image/webp")), linear-gradient(#62a53e 280px 290px);
+    background: image-set("../../images/promo-mobile@2x.webp" type("image/webp"), "../../images/promo-mobile@2x.png" type("image/png")), linear-gradient(#62a53e 280px 290px);
     background-size: 280px auto;
   }
 
   @media (min-width: $tablet-width) {
-    background: image-set("../../images/promo-tablet@1x.png" type("image/png"), "../../images/promo-tablet@1x.webp" type("image/webp")), linear-gradient(#62a53e 707px 200px);
+    background: image-set("../../images/promo-tablet@1x.webp" type("image/webp"), "../../images/promo-tablet@1x.png" type("image/png")), linear-gradient(#62a53e 707px 200px);
     background-repeat: no-repeat;
     max-width: 707px;
     padding: 57px 125px 60px 77px;
@@ -24,13 +24,13 @@
 
 
     @media (min-resolution: 2dppx) {
-      background-image: image-set("../../images/promo-tablet@2x.png" type("image/png"), "../../images/promo-tablet@2x.webp" type("image/webp")), linear-gradient(#62a53e 707px 200px);
+      background-image: image-set("../../images/promo-tablet@2x.webp" type("image/webp"), "../../images/promo-tablet@2x.png" type("image/png")), linear-gradient(#62a53e 707px 200px);
       background-size: 707px auto;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background: image-set("../../images/promo-pc@1x.png" type("image/png"), "../../images/promo-pc@1x.webp" type("image/webp")), linear-gradient(#62a53e 245px 288px);
+    background: image-set("../../images/promo-pc@1x.webp" type("image/webp"), "../../images/promo-pc@1x.png" type("image/png")), linear-gradient(#62a53e 245px 288px);
     background-repeat: no-repeat;
     padding: 56px 42px 43px;
     max-width: 245px;
@@ -38,7 +38,7 @@
 
 
     @media (min-resolution: 2dppx) {
-      background-image: image-set("../../images/promo-pc@2x.png" type("image/png"), "../../images/promo-pc@2x.webp" type("image/webp")), linear-gradient(#62a53e 245px 288px);
+      background-image: image-set("../../images/promo-pc@2x.webp" type("image/webp"), "../../images/promo-pc@2x.png" type("image/png")), linear-gradient(#62a53e 245px 288px);
       background-size: 245px auto;
     }
   }

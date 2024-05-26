@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     border: none;
     padding: 0 37px 40px;
+    // height: 511px;
     background: linear-gradient(to bottom, rgb(255, 255, 255)  0% 13%, #f2f2f2 13%, #f2f2f2 87%);
   }
 
@@ -32,7 +33,7 @@
   text-decoration: none;
   display: flex;
   padding: 0 36px;
-  height: 107px;
+  //height: 107px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
@@ -46,9 +47,6 @@
 }
 
 .catalog-card__picture {
-
-  height: 107px;
-
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
   }

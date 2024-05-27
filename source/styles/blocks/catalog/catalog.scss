@@ -21,6 +21,10 @@
     margin: 74px 0 84px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 74px 0 84px;
+  }
 }
 
 .catalog__list {

@@ -6,7 +6,7 @@
 
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-start;
+    justify-content: start;
     gap: 33px;
   }
 
@@ -137,7 +137,7 @@
   line-height: 20px;
   color: $black;
   cursor: pointer;
-  padding: 22px 0;
+  padding: 22px 0 23px;
   text-align: center;
 
 
@@ -152,13 +152,13 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding: 12px 5px;
+    padding: 13px 5px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 11px 5px;
+    padding: 19px 5px;
   }
 }
 
@@ -171,7 +171,7 @@
       width: calc(100% - 10px);
       height: 2px;
       background-color: $accent-border-color;
-      top: 46px;
+      top: 45px;
       left: 5px;
     }
   }
@@ -184,10 +184,13 @@
   }
 }
 
-
 .navigation__link--light {
   @media (min-width: $desktop-width) {
     color: $white;
+
+    &::after {
+      background-color: $white;
+    }
 
     &::after {
       background-color: $white;

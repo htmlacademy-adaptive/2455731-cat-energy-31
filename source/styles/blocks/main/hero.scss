@@ -24,21 +24,21 @@
     &::before {
       position: absolute;
       content: "";
-      background: image-set("../../images/hero-bg-pc-1@1x.png" type("image/png"), "../../images/hero-bg-pc-1@1x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
+      background: image-set("../../images/hero-bg-pc-1@1x.png" type("image/png"), "../../images/hero-bg-pc@1x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
       background-size: cover;
       background-position: auto 694px, auto auto;
       background-repeat: no-repeat;
       display: block;
-      height: calc(100% + 138px);
+      height: calc(100% + 131px);
       width: 50%;
       right: 0;
-      top: -138px;
+      top: -131px;
       bottom: 0;
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background: image-set("../../images/hero-bg-pc-1@2x.png" type("image/png"), "../../images/hero-bg-pc-1@2x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
+        background: image-set("../../images/hero-bg-pc@2x.png" type("image/png"), "../../images/hero-bg-pc@2x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
         background-size: 720px auto;
       }
     }
@@ -114,7 +114,7 @@
   @media (min-width: $desktop-width) {
     z-index: 10;
     position: absolute;
-    left: 100%;
+    left: 108%;
     top: -80px;
     width: 554px;
   }

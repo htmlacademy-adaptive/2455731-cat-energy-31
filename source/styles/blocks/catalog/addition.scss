@@ -11,7 +11,7 @@
 }
 
 .addition__title {
-  padding-bottom: 35px;
+  padding-bottom: 33px;
   margin: 0;
 
 
@@ -21,10 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 72px;
+    margin: 0 0 80px;
     text-align: left;
-    //min-width: 100%;
-    //max-width: 100%;
   }
 }
 
@@ -37,11 +35,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 70px;
     border: $secondary-border;
-    //max-width: 896px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 41px 96px 0;
+    margin: 0 38px 96px 0;
     border: none;
     border-top: $secondary-border;
     padding: 0;

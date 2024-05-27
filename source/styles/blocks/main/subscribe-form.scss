@@ -42,7 +42,7 @@
 
 .subscribe__button {
   min-width: 280px;
-  max-height: 56px;
+  min-height: 56px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {

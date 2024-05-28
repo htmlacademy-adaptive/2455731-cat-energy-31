@@ -87,8 +87,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    // padding-bottom: 57px;
-    // width: fit-content;
     grid-column: 1/2;
     grid-row: 3/4;
     align-self: end;
@@ -210,9 +208,7 @@
     grid-column: 1/2;
     grid-row: 4/5;
     align-self: end;
-
     margin: 0;
-    margin-left: -10px;
 
     & span {
       display: inline-block;

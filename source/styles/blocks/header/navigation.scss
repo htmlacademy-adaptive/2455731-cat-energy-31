@@ -6,8 +6,7 @@
 
 
   @media (min-width: $tablet-width) {
-    justify-content: start;
-    gap: 33px;
+    //
   }
 
   @media (min-width: $desktop-width) {
@@ -81,12 +80,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 436px;
+    justify-content: flex-start;
+    max-width: 440px;
+    gap: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 475px;
+    max-width: 480px;
   }
 }
 

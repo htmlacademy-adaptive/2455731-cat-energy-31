@@ -1,0 +1,87 @@
+.promo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 59px 43px 60px;
+  max-width: 280px;
+  max-height: 290px;
+  background: image-set("../../images/promo-mobile@1x.png" type("image/png"), "../../images/promo-mobile@1x.webp" type("image/webp")), linear-gradient(#62a53e 280px 290px);
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background: image-set("../../images/promo-mobile@2x.png" type("image/png"), "../../images/promo-mobile@2x.webp" type("image/webp")), linear-gradient(#62a53e 280px 290px);
+    background-size: 280px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: image-set("../../images/promo-tablet@1x.png" type("image/png"), "../../images/promo-tablet@1x.webp" type("image/webp")), linear-gradient(#62a53e 707px 200px);
+    background-repeat: no-repeat;
+    max-width: 707px;
+    padding: 57px 125px 60px 77px;
+    display: flex;
+    align-items: center;
+
+
+    @media (min-resolution: 2dppx) {
+      background: image-set("../../images/promo-tablet@2x.png" type("image/png"), "../../images/promo-tablet@2x.webp" type("image/webp")), linear-gradient(#62a53e 707px 200px);
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: image-set("../../images/promo-pc@1x.png" type("image/png"), "../../images/promo-pc@1x.webp" type("image/webp")), linear-gradient(#62a53e 245px 288px);
+    background-repeat: no-repeat;
+    padding: 56px 42px 43px;
+    max-width: 245px;
+    margin: 0;
+
+
+    @media (min-resolution: 2dppx) {
+      background: image-set("../../images/promo-pc@2x.png" type("image/png"), "../../images/promo-pc@2x.webp" type("image/webp"));
+      background-size: 245px auto;
+    }
+  }
+}
+
+.promo::before {
+  background-image: url("../../icons/stack.svg#gift");
+  content: "";
+  width: 78px;
+  height: 80px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 82px;
+    margin: 0 264px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 83px;
+    margin: 0 auto 46px;
+  }
+}
+
+.promo__slogan {
+  color: $white;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

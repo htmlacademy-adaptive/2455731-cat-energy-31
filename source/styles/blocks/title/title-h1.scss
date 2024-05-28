@@ -1,0 +1,12 @@
+.title-h1 {
+  font-family: $secondary-font;
+  font-weight: $font-weight-normal;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

@@ -1,0 +1,41 @@
+.site-logo {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (min-width: $tablet-width) {
+    //
+  }
+}
+
+.site-logo__image {
+  display: block;
+  margin-right: 54px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+}
+
+.site-logo__text {
+  display: block;
+  height: 18px;
+  width: 101px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 21px;
+    width: 118px;
+    margin-right: 540px;
+  }
+}

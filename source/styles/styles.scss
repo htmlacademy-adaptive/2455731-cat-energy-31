@@ -1,7 +1,37 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+@import "./common/container.scss";
+
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+
+@import "./blocks/button.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/header/navigation.scss";
+@import "./blocks/header/site-logo.scss";
+@import "./blocks/title/title-h1.scss";
+@import "./blocks/title/title-h2.scss";
+@import "./blocks/title/title-h3.scss";
+@import "./blocks/title/title.scss";
+@import "./blocks/main/contacts.scss";
+@import "./blocks/main/main.scss";
+@import "./blocks/main/hero.scss";
+@import "./blocks/main/benefits.scss";
+@import "./blocks/main/product-description.scss";
+@import "./blocks/main/illustration.scss";
+@import "./blocks/main/subscribe.scss";
+@import "./blocks/main/subscribe-form.scss";
+@import "./blocks/main/page.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/developer.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/catalog-card.scss";
+@import "./blocks/catalog/addition.scss";
+@import "./blocks/catalog/addition-card.scss";
+@import "./blocks/catalog/promo.scss";
+@import "./blocks/illustration/illustration-slider.scss";

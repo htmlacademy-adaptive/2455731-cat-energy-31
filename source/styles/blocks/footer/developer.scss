@@ -1,0 +1,56 @@
+.developer {
+  padding-top: 4px;
+}
+
+.developer__link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: $primary-color-text;
+  line-height: 20px;
+  padding-top: 2px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 168px;
+    align-items: center;
+    padding: 0;
+    margin-bottom: -5px;
+    margin-top: -4px;
+  }
+}
+
+
+.developer__link::after {
+  mask-image: url("../../icons/stack.svg#logo-html");
+  display: inline-block;
+  content: "";
+  width: 27px;
+  height: 34px;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $secondary-color-2;
+  margin-top: -3px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.developer__link:hover::after,
+.developer__link:focus::after {
+  background-color: $primary-color;
+}
+
+.developer__link:active::after {
+  opacity: 0.8;
+}

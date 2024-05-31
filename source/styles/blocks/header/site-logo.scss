@@ -1,6 +1,8 @@
 .site-logo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 
   &:hover {
     opacity: 0.7;
@@ -11,31 +13,29 @@
   }
 
   @media (min-width: $tablet-width) {
-    //
+    gap: 13px;
+    flex-grow: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 14px;
   }
 }
 
 .site-logo__image {
   display: block;
-  margin-right: 54px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 13px;
-  }
 }
 
 .site-logo__text {
   display: block;
   height: 18px;
   width: 101px;
+  margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 90px;
-  }
 
   @media (min-width: $desktop-width) {
     height: 21px;
-    width: 118px;
-    margin-right: 540px;
+    width: 118;
+    margin: 0;
   }
 }

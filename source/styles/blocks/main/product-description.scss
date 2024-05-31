@@ -1,18 +1,13 @@
 .product-description {
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid #ebebeb;
-    padding-bottom: 30px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     padding: 0;
   }
-}
-
-
-.product-description__container {
-  //
 }
 
 .product-description__title {
@@ -33,18 +28,21 @@
   list-style-type: none;
   padding: 0;
   margin: 0 0 49px;
-
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
-    justify-content: start;
     counter-reset: test;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 60px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     margin: 0 0 69px;
-    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 78px;
   }
 }
 
@@ -54,38 +52,14 @@
   flex-wrap: wrap;
   padding: 0;
   position: relative;
-
-
-  &:not(:last-child) {
-    margin: 0 0 20px;
-  }
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    max-height: 280px;
-    max-width: 249px;
+    min-height: 280px;
     padding: 40px 0 57px;
 
-    &:not(:last-child) {
-      margin-right: 134px;
-    }
-
-    &:nth-child(even) {
-      margin-right: 0;
-    }
-
-    &:not(:nth-last-child(-n+2)) {
-      margin-bottom: 37px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    max-width: 248px;
-
-    &:not(:last-child) {
-      margin-right: 76px;
-      margin-bottom: 0;
+    @media (min-width: $desktop-width) {
+      //
     }
   }
 
@@ -103,7 +77,7 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      margin-bottom: 29px;
+      margin-bottom: 31px;
       margin-right: 0;
     }
 
@@ -113,7 +87,6 @@
     }
   }
 }
-
 
 .product-description__item--healthy::before {
   background-image: url("../../icons/stack.svg#leaf");
@@ -141,7 +114,7 @@
     content: counter(test);
     position: absolute;
     display: inline-block;
-    right: 0;
+    left: 115px;
     top: 0;
     font-size: 280px;
     line-height: 280px;
@@ -149,7 +122,6 @@
     font-weight: 400;
     color: #f2f2f2;
     z-index: -1;
-    width: 132px;
   }
 }
 
@@ -163,8 +135,12 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    max-width: 242px;
+    max-width: 245px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
   }
 }

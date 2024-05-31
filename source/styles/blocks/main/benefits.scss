@@ -1,21 +1,12 @@
-.benefits {
-  //
-}
-
-.benefits__container {
-  //
-}
-
 .benefits__list {
-
   list-style-type: none;
   padding: 0;
   margin: 0;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 80px;
     margin-bottom: 71px;
     margin-top: 82px;
   }
@@ -25,9 +16,8 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $secondary-bg;
-  min-height: 266px;
-  margin-bottom: 20px;
-  padding: 23px 24px 18px 20px;
+  margin-bottom: 21px;
+  padding: 23px 24px 22px 20px;
 
   &::before {
     display: inline-block;
@@ -38,17 +28,17 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 23% auto 20%;
+    grid-template-columns: auto 43%;
+    grid-template-rows: min-content auto 15%;
     min-height: 372px;
-    padding: 76px 29px 47px 52px;
+    padding: 78px 29px 53px 52px;
 
     &:first-child {
       margin-bottom: 30px;
     }
 
     &:last-child {
-      margin-bottom: 45px;
+      margin-bottom: 44px;
     }
 
     &::before {
@@ -59,11 +49,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
     max-height: 374px;
-    grid-template-columns: 38% auto;
-    grid-template-rows: 40% 1fr auto;
-    padding: 41px 61px 61px 34px;
+    grid-template-columns: 36% auto;
+    grid-template-rows: 40% 1fr 11%;
+    padding: 41px 61px 55px 52px;
 
     &:first-child {
       margin-bottom: 0;
@@ -71,10 +60,6 @@
 
     &:last-child {
       margin-bottom: 0;
-    }
-
-    &:not(:last-child) {
-      margin-right: 80px;
     }
 
     &::before {
@@ -85,66 +70,55 @@
   }
 }
 
-//.benefits__item--secondary {
-// @media (min-width: $desktop-width) {
-//   padding-left: 39px;
-// }
-//}
-
 .benefits__item--secondary::before {
   background-image: url("../../icons/stack.svg#cat-pro");
   width: 67px;
   height: 50px;
-  margin: 0 8px 17px -4px;
+  margin: 0 8px 24px -4px;
 
 
   @media (min-width: $tablet-width) {
     height: 200px;
     min-width: 268px;
     width: 100%;
-    margin: 10px 0 0;
+    margin: 13px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 134px;
     height: 100px;
     width: fit-content;
-    padding-left: 35px;
+    margin-left: -16px;
   }
 }
-
-//.benefits__item--primary {
-// @media (min-width: $desktop-width) {
-//   padding-left: 53px;
-//}
-//}
 
 .benefits__item--primary::before {
   background-image: url("../../icons/stack.svg#cat-slim");
   width: 50px;
   height: 53px;
-  margin: 0 21px 17px 0;
+  margin: 0 21px 19px 0;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 211px;
-    margin: 0 0 0 15px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     height: 106px;
-    margin: 0 0 0 15px;
     width: 100px;
+    margin: 0;
   }
 }
 
 .benefits__item-title {
-  margin-top: 4px;
+  margin-top: 6px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 0;
+    align-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -162,7 +136,7 @@
   text-align: left;
   margin: 0;
   border-bottom: $primary-border;
-  padding-bottom: 15px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -179,7 +153,6 @@
       grid-row: 2/3;
       max-width: 457px;
       place-self: center center;
-      margin-left: 15px;
     }
   }
 }
@@ -193,7 +166,7 @@
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 17px;
   align-items: center;
 
 
@@ -201,7 +174,7 @@
     content: "";
     mask-image: url("../../icons/stack.svg#arrow");
     background-color: $black;
-    width: 27px;
+    width: 28px;
     height: 10px;
     transition: mask-position 0.3s linear;
     display: inline-block;
@@ -214,7 +187,7 @@
     opacity: 0.6;
 
     &::after {
-      mask-position: 0 0;
+      mask-position: -1px 0;
     }
   }
 
@@ -232,12 +205,12 @@
     align-self: center;
 
     &::after {
-      mask-position: -8px 0;
+      mask-position: -1px 0;
     }
   }
 
   @media (min-width: $desktop-width) {
     justify-self: center;
-    margin-left: 5px;
+    margin-left: -6px;
   }
 }

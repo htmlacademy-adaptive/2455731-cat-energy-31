@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-.subscribe__container {
-  //
-}
-
 .subscribe__title {
   margin: 0 0 32px;
 
@@ -27,10 +23,9 @@
   color: $black;
   margin: 0 0 24px;
   text-align: center;
-  max-width: 278px;
+  min-width: auto;
 
   @media (min-width: $tablet-width) {
-    //margin-bottom: 66px;
     font-size: 24px;
     line-height: 32px;
     max-width: 632px;

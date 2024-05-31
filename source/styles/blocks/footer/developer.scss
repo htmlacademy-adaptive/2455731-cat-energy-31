@@ -1,5 +1,9 @@
 .developer {
   padding-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .developer__link {
@@ -22,12 +26,9 @@
   @media (min-width: $tablet-width) {
     min-width: 168px;
     align-items: center;
-    padding: 0;
-    margin-bottom: -5px;
-    margin-top: -4px;
+    padding: 0 0 3px;
   }
 }
-
 
 .developer__link::after {
   mask-image: url("../../icons/stack.svg#logo-html");

@@ -93,16 +93,17 @@
 
 .addition-card__button {
   margin: 10px auto 0;
-  min-width: 280px;
+  width: 100%;
 
 
   @media (min-width: $tablet-width) {
-    min-width: 632px;
     margin: 0 0 auto;
+    grid-column: 1/4;
+    grid-row: 2/3;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 244px;
+    max-width: 244px;
     margin: 0 0 0 23px;
   }
 }

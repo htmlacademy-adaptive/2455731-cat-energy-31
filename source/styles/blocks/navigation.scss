@@ -79,7 +79,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 33px;
+    gap: 0 33px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -92,12 +92,10 @@
       background-color: $white;
     }
   }
-  //@media (min-width: $tablet-width) {
-  // position: static;
-  // background: none;
 
   @media (min-width: $desktop-width) {
     z-index: 1;
+    max-width: 49%;
   }
 }
 

@@ -148,7 +148,6 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
     border: 1px solid #f2f2f2;
     margin: 83px 0 0;
     background: none;
@@ -236,7 +235,7 @@
   @media (min-width: $tablet-width) {
     min-width: 250px;
     max-height: 40px;
-    margin: auto 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

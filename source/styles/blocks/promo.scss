@@ -9,7 +9,7 @@
       ("../../images/promo-mobile@1x.png") type("image/png") 1x,
       ("../../images/promo-mobile@2x.png") type("image/png") 2x
     );
-  background-color: linear-gradient(#62a53e);
+  background-color: #62a53e;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -41,8 +41,7 @@
       );
     padding: 56px 42px 43px;
     max-width: 245px;
-    max-height: 288px;
-    margin: 0;
+    margin: 0 0 95px;
     background-size: 100% auto;
   }
 

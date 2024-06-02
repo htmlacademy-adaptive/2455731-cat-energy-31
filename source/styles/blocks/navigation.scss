@@ -4,9 +4,11 @@
   justify-content: space-between;
   background-color: $white;
   align-items: center;
+  gap: 10px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    gap: 0;
 
     .navigation__toggle {
       display: none;

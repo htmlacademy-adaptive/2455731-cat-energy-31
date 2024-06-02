@@ -18,6 +18,7 @@
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
+  gap: 16px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -41,9 +42,8 @@
   color: $accent-color-text;
   text-transform: uppercase;
   margin: 0;
-  max-width: 140px;
   text-align: left;
-  // margin-right: auto;
+  max-width: calc(50% - 16px);
 
 
   @media (min-width: $tablet-width) {

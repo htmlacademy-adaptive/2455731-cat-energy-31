@@ -73,7 +73,7 @@
     display: block;
     padding-left: 80px;
     position: relative;
-    width: 450px;
+    //width: 445px;
   }
 }
 
@@ -87,7 +87,7 @@
     color: $black;
     text-align: left;
     margin: 0 0 40px;
-    max-width: 420px;
+    max-width: 422px;
   }
 }
 
@@ -112,6 +112,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+    max-width: 310px;
   }
 }
 
@@ -127,7 +128,7 @@
   @media (min-width: $desktop-width) {
     z-index: 10;
     position: absolute;
-    left: 108%;
+    left: 44%;
     top: -80px;
     width: 554px;
   }

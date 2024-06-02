@@ -1,8 +1,8 @@
 .illustration {
   background-color: $accent-bg;
   position: relative;
-  padding-top: 25px;
-  padding-bottom: 43px;
+  padding-top: 27px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, $primary-bg 57%, $accent-bg 57%, $accent-bg 43%);
@@ -77,12 +77,13 @@
 .illustration__stats {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
-  margin: 0;
+  padding-bottom: 14px;
+  margin: 0 0 18px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     justify-content: flex-start;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +102,7 @@
   position: relative;
   border-radius: 3px;
   min-width: 124px;
-  padding-top: 14px;
+  padding: 8px 5px 0;
   margin: 0;
 
   &::before {
@@ -109,10 +110,10 @@
     position: absolute;
     display: inline-block;
     height: 1px;
-    width: 23px;
+    width: 17px;
     background-color: #cdcdcd;
     left: 1px;
-    bottom: 0;
+    bottom: 1px;
   }
 
   &::after {
@@ -120,16 +121,17 @@
     position: absolute;
     display: inline-block;
     height: 1px;
-    width: 23px;
+    width: 17px;
     background-color: #cdcdcd;
     right: 1px;
-    bottom: 0;
+    bottom: 1px;
   }
 
   @media (min-width: $tablet-width) {
     height: 72px;
-    padding-top: 15px;
+    padding: 18px 8px 0;
     width: 162px;
+    margin: 0;
 
     &:not(:last-child) {
       margin-right: 43px;
@@ -137,7 +139,7 @@
 
     &::before,
     &::after {
-      width: 13px;
+      width: auto;
     }
   }
 }
@@ -148,27 +150,32 @@
   font-size: 24px;
   line-height: 24px;
   color: $black;
-  margin: 0 0 5px;
+  margin: 5px 0 8px;
   text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
     margin: 0 0 11px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: -5px 0 13px;
+  }
 }
 
 .illustration__item-description {
   font-size: 12px;
   line-height: 100%;
-  margin: 7px 0 -14px 23px;
+  margin: 0 0 -12px 19px;
   max-width: 77px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    min-width: 125px;
-    margin: 0 0 -25px 18px;
+    max-width: 125px;
+    margin: 0 0 -25px 10px;
 
     @media (min-width: $desktop-width) {
       //
@@ -185,7 +192,7 @@
   color: $black;
   flex-grow: 1;
   text-align: center;
-  margin: 15px 0;
+  margin: 0 0 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -223,7 +230,7 @@
 
 .illustration__slider {
   @media (min-width: $tablet-width) {
-    margin: 99px auto 101px;
+    margin: 105px auto 101px;
   }
 
   @media (min-width: $desktop-width) {

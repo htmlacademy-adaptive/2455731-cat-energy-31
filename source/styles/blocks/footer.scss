@@ -1,6 +1,6 @@
 .footer {
   background-color: $secondary-bg;
-  padding: 38px 0 40px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     padding: 55px 0;
@@ -54,7 +54,7 @@
 }
 
 .footer__developer {
-  margin-top: 20px;
+  margin-top: 19px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

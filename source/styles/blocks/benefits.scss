@@ -175,7 +175,6 @@
     background-color: $black;
     width: 28px;
     height: 10px;
-    transition: mask-position 0.3s linear;
     display: inline-block;
     mask-repeat: no-repeat;
     mask-size: contain;
@@ -186,7 +185,7 @@
     opacity: 0.6;
 
     &::after {
-      mask-position: -1px 0;
+      opacity: 0.6;
     }
   }
 

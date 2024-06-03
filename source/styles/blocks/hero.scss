@@ -54,9 +54,9 @@
       background-position: center left;
       background-repeat: no-repeat;
       display: inline-block;
-      height: calc(100% + 115px);
+      height: calc(100% + 114px);
       width: 50%;
-      inset: -115px 0 0 50%;
+      inset: -114px 0 0 50%;
       z-index: 0;
     }
   }
@@ -73,7 +73,7 @@
     display: block;
     padding-left: 80px;
     position: relative;
-    //width: 445px;
+    max-width: 530px;
   }
 }
 
@@ -112,7 +112,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
-    max-width: 310px;
   }
 }
 
@@ -128,7 +127,7 @@
   @media (min-width: $desktop-width) {
     z-index: 10;
     position: absolute;
-    left: 44%;
+    left: 100%;
     top: -80px;
     width: 554px;
   }

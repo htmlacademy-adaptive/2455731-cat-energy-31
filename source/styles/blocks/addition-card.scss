@@ -19,6 +19,7 @@
     padding: 13px 0 18px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     min-width: 896px;
 
     & span {
@@ -112,6 +113,7 @@
   @media (min-width: $desktop-width) {
     max-width: 244px;
     margin: 0 0 0 23px;
+    grid-column: 4/5;
   }
 }
 

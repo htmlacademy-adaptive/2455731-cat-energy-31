@@ -1,6 +1,8 @@
 .contacts {
   @media (min-width: $desktop-width) {
     position: relative;
+    padding-top: 95px;
+    padding-bottom: 106px;
   }
 }
 
@@ -27,10 +29,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 60px 79px;
-    min-width: 565px;
-    min-height: 199px;
-    position: absolute;
-    top: 95px;
+    max-width: 565px;
     background-color: $primary-bg;
   }
 }
@@ -101,5 +100,16 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+
+  &--nojs {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      height: 400px;
+      width: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
   }
 }

@@ -35,8 +35,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 38px 96px 0;
-    border: none;
-    border-top: $secondary-border;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+
     padding: 0;
   }
 }

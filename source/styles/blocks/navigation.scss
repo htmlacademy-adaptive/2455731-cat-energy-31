@@ -80,6 +80,7 @@
     flex-wrap: wrap;
     justify-content: start;
     gap: 0 33px;
+    max-width: 55%;
   }
 
   @media (max-width: $mobile-width-only) {

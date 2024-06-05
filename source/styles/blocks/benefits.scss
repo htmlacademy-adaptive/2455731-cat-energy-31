@@ -53,6 +53,7 @@
     grid-template-rows: 40% 1fr 11%;
     padding: 41px 61px 55px 52px;
 
+
     &:first-child {
       margin-bottom: 0;
     }
@@ -173,7 +174,7 @@
     content: "";
     mask-image: url("../../icons/stack.svg#arrow");
     background-color: $black;
-    width: 28px;
+    width: 32px;
     height: 10px;
     display: inline-block;
     mask-repeat: no-repeat;

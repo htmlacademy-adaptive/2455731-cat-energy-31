@@ -28,7 +28,10 @@ img {
   vertical-align: middle;
 }
 
-picture,
+picture {
+  display: contents;
+}
+
 source {
   display: contents;
 }

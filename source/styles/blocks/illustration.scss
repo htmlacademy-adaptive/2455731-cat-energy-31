@@ -204,12 +204,6 @@
     line-height: 20px;
     margin: 0;
     padding: 0;
-
-    & span {
-      display: block;
-      text-align: right;
-      margin-top: 12px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -220,14 +214,23 @@
     grid-row: 4/5;
     align-self: end;
     margin: 0;
+  }
+}
 
-    & span {
-      display: inline-block;
-      margin-top: 0;
 
-      &:not(:last-of-type) {
-        margin-right: 65px;
-      }
+.illustration__resume span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+    margin-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-top: 0;
+
+    &:not(:last-of-type) {
+      margin-right: 65px;
     }
   }
 }

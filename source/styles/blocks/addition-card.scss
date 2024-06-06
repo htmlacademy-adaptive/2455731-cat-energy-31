@@ -21,10 +21,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     min-width: 896px;
+  }
+}
 
-    & span {
-      margin-top: 4px;
-    }
+.addition-card span {
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
   }
 }
 
@@ -78,10 +80,6 @@
   line-height: 20px;
   margin: 0 0 0 5px;
 
-  & span {
-    margin-left: 4px;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 16px;
     justify-self: end;
@@ -95,6 +93,10 @@
     width: fit-content;
     align-self: center;
   }
+}
+
+.addition-card__text span {
+  margin-left: 4px;
 }
 
 .addition-card__button {

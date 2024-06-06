@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid #ebebeb;
-  position: relative;
   padding: 13px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -10,17 +10,23 @@
 
   @media (min-width: $desktop-width) {
     padding: 56px 0 0;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: linear-gradient(rgba(#68b738, 0.85), rgba(#68b738, 0.85));
-      display: inline-block;
-      width: 50%;
-      height: auto;
-      background-size: auto 100%;
-      background-position: center left;
-      background-repeat: no-repeat;
+  &--secondary {
+    @media (min-width: $desktop-width) {
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: #62a63a;
+        display: inline-block;
+        width: 50%;
+        height: calc(100% + 56px);
+        inset: -56px 0 0 50%;
+        background-size: auto 100%;
+        background-position: center;
+        right: 0;
+        background-repeat: no-repeat;
+      }
     }
   }
 }

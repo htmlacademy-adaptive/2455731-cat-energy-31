@@ -6,10 +6,6 @@
   border-top: 1px solid #ebebeb;
   margin: 0;
 
-  & span {
-    margin-left: 2px;
-  }
-
   @media (min-width: $tablet-width) {
     display: block;
     border: none;
@@ -22,6 +18,14 @@
     padding: 0 38px 40px;
     background: linear-gradient(to bottom, rgb(255, 255, 255)  0% 16%, #f2f2f2 16%, #f2f2f2 84%);
   }
+}
+
+.catalog-card span {
+  margin-left: 2px;
+}
+
+.catalog-card__link-image picture {
+  display: contents;
 }
 
 .catalog-card__link-image {
@@ -93,18 +97,17 @@
   padding-bottom: 3px;
   align-self: end;
 
-
-  & span {
-    display: block;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 32px;
+    margin: 0 0 33px;
   }
+}
+
+.catalog-card__list span {
+  display: block;
 }
 
 .catalog-card__item {
@@ -136,10 +139,6 @@
 .catalog-card__item-text {
   display: flex;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    //
-  }
 }
 
 .catalog-card--secondary {
@@ -203,14 +202,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 18px 26px;
+    margin: 0 auto 26px;
   }
 }
 
 .catalog-card__subtitle {
   font-size: 12px;
   line-height: 16px;
-  margin: 0;
+  margin: 0 0 21px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -236,25 +235,27 @@
   @media (min-width: $tablet-width) {
     min-width: 250px;
     max-height: 40px;
-    margin: 0;
+    margin-top: auto;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 169px;
+    margin-top: auto;
   }
 }
 
 .catalog-card__button-additional {
   width: 100%;
-  margin-top: 21px;
+  margin-top: auto;
 
 
   @media (min-width: $tablet-width) {
     min-width: 250px;
-    margin: 0;
+    margin-top: auto;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 169px;
+    margin-top: auto;
   }
 }

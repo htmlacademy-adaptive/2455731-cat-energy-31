@@ -3,10 +3,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
 
-    & span {
-      margin-left: 3px;
-    }
+.developer span {
+  @media (min-width: $tablet-width) {
+    margin-left: 3px;
   }
 }
 
